@@ -72,13 +72,13 @@ function Header() {
           <i className="bi bi-list mobile-nav-toggle"></i>
         </nav>
         {/* End of .navbar */}
-
+{/* 
         <a
           href="tel:+351219291516"
           className="book-a-table-btn scrollto d-none d-lg-flex"
         >
           Book a table
-        </a>
+        </a> */}
       </div>
     </header>
   );

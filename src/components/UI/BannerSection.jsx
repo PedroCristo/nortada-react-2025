@@ -7,7 +7,7 @@ function BannerSection({ banner_title, banner_content, banner_bg }) {
       className={`set-bg container-fluid d-flex justify-content-center align-items-center text-center ${banner_bg}`}
     >
       <div className="row">
-        <div className="col-md-12">
+        <div className="col-md-12" data-aos="fade-up">
           <h3>{banner_title}</h3>
           <p>{banner_content}</p>
         </div>

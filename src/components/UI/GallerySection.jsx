@@ -1,7 +1,15 @@
 import PropTypes from "prop-types";
 import galleryDataImages from "../../data/global/gallery-images";
+import React, { useEffect } from 'react';
+import initializeGalleryFeatures from '../../js/gallery-light-box';
+import 'swiper/swiper-bundle.css'; // Import Swiper styles
+import 'glightbox/dist/css/glightbox.css'; // Import GLightbox styles
 
 function GallerySection({ gallery_title, gallery_sub_title }) {
+
+  useEffect(() => {
+    initializeGalleryFeatures();
+  }, []);
   return (
     <section id="gallery" className="gallery">
       <div className="container" data-aos="fade-up">

@@ -10,7 +10,33 @@
 
     .set-bg {
         background-attachment: initial;
-      }
+    }
 
+
+    .page404 .content-box .title {
+        font-size: 8rem;
+
+    }
+
+    .page404 .content-box .content-item h2 {
+        font-size: 1.8rem;
+    }
+
+
+    .page404 .btn-box {
+        bottom: 35px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .page404 .content-box .title {
+        font-size: 6rem;
+
+    }
+
+    .page404 .content-box .content-item h2 {
+        font-size: 1.4rem;
+    }
 
 }
