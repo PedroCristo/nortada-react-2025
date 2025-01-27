@@ -1,5 +1,5 @@
 import TopBarPt from "../../components/pt/TopBarPt";
-import Header from "../../components/UI/Header";
+import HeaderPt from "../../components/pt/HeaderPt";
 import HeroSectionPt from "../../components/pt/HeroSectionPt";
 import AboutSectionPt from "../../components/pt/AboutSectionPt";
 import BannerPt_1 from "../../components/pt/BannerPt_1";
@@ -14,7 +14,7 @@ function HomePt() {
   return (
     <div>
       <TopBarPt />
-      <Header />
+      <HeaderPt />
       <HeroSectionPt />
       <AboutSectionPt />
       <BannerPt_1 />

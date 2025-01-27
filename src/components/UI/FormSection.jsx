@@ -83,9 +83,11 @@ function FormSection({
         <div className="error-message"></div>
         <div className="sent-message">{form_sent_menssage}</div>
       </div>
-      <div className="text-center">
-        <button type="submit">{form_btn}</button>
-      </div>
+      <div className="text-left row">
+        <div className="col-md-6">
+        <button type="submit" className="btn">{form_btn}</button>
+        </div>
+        <div className="col-md-6">
       <ReCAPTCHA
         sitekey={"6Lf9QKcqAAAAAB57O6NTG6To_pl_jXqRHkAZRbFV"}
         onChange={handleRecaptchaChange}
@@ -94,6 +96,8 @@ function FormSection({
       {alertMessage && (
         <h6 className="alert alert-danger mt-3">{alertMessage}</h6>
       )}
+        </div>
+      </div>
     </form>
   );
 }

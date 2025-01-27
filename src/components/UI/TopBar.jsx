@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom"; // Ensure to import Link if using react-router
 
-function TopBar({ shedule, lang,  phone_number }) {
+function TopBar({ schedule, lang1, lang2, langUrl, phone_number }) {
   return (
     <div id="topbar" className="d-flex align-items-center fixed-top">
       <div className="container d-flex justify-content-center justify-content-md-between">
@@ -9,15 +10,15 @@ function TopBar({ shedule, lang,  phone_number }) {
             <span>{phone_number}</span>
           </i>
           <i className="bi bi-clock d-flex align-items-center ms-4">
-            <span> {shedule} </span>
+            <span>{schedule}</span>
           </i>
         </div>
 
         <div className="languages d-none d-md-flex align-items-center">
           <ul>
-            <li>PT</li>
+            <li>{lang1}</li>
             <li>
-              <a href="#">De</a>
+              <Link to={langUrl}>{lang2}</Link>
             </li>
           </ul>
         </div>
@@ -27,9 +28,11 @@ function TopBar({ shedule, lang,  phone_number }) {
 }
 
 TopBar.propTypes = {
-  shedule: PropTypes.string.isRequired, // `shedule` must be a string and is required
-  phone_number: PropTypes.string.isRequired, // `shedule` must be a string and is required
-  lang: PropTypes.string, // `lang` must be a string, but it's optional
+  schedule: PropTypes.string.isRequired, // `schedule` must be a string and is required
+  phone_number: PropTypes.string.isRequired, // `phone_number` must be a string and is required
+  lang1: PropTypes.string, // `lang1` must be a string, but it's optional
+  lang2: PropTypes.string, // `lang2` must be a string, but it's optional
+  langUrl: PropTypes.string, // `langUrl` must be a string, but it's optional
 };
 
 export default TopBar;

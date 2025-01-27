@@ -9,7 +9,9 @@ function TopBarPt() {
           key={item.id}
           phone_number={item.phone_number}
           shedule={item.shedule}
-          lang="pt" // You can also replace this with a dynamic value
+          lang1="PT" 
+          lang2="EN" 
+          langUrl="/home-en" 
         />
       ))}
     </div>

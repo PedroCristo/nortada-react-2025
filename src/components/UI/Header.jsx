@@ -1,8 +1,12 @@
+import PropTypes from "prop-types";
 import { HashLink as Link } from "react-router-hash-link";
 import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import applyScrollEffect from "../../js/scroll-header";
 
-function Header() {
+function Header({ HeaderNavDataPt }) {
+  const location = useLocation();
+
   // Run the scroll effect logic when the component is mounted
   useEffect(() => {
     applyScrollEffect();
@@ -11,7 +15,7 @@ function Header() {
   return (
     <header id="header" className="fixed-top d-flex align-items-center">
       <div className="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
-        <a href="index.html" className="logo me-auto me-lg-0">
+        <a href="/" className="logo me-auto me-lg-0">
           <img
             src="/images/extras/nortada_logo_no_bg.png"
             alt="Nortada Logo"
@@ -21,67 +25,37 @@ function Header() {
 
         <nav id="navbar" className="navbar order-last order-lg-0">
           <ul>
-            <li>
-              <Link className="nav-link scrollto active" to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link scrollto" smooth to="#about">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link scrollto" smooth to="#gallery">
-                Gallery
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link scrollto" smooth to="#contact">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link scrollto" to="menu-pt">
-                Menu
-              </Link>
-            </li>
-            {/* 
-              Uncomment the following block for a dropdown menu example
-              <li className="dropdown">
-                <a href="#"><span>Drop Down</span> <i className="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="#">Drop Down 1</a></li>
-                  <li className="dropdown">
-                    <a href="#"><span>Deep Drop Down</span> <i className="bi bi-chevron-right"></i></a>
-                    <ul>
-                      <li><a href="#">Deep Drop Down 1</a></li>
-                      <li><a href="#">Deep Drop Down 2</a></li>
-                      <li><a href="#">Deep Drop Down 3</a></li>
-                      <li><a href="#">Deep Drop Down 4</a></li>
-                      <li><a href="#">Deep Drop Down 5</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Drop Down 2</a></li>
-                  <li><a href="#">Drop Down 3</a></li>
-                  <li><a href="#">Drop Down 4</a></li>
-                </ul>
-              </li> 
-            */}
+            {HeaderNavDataPt.map((item) => (
+              <li key={item.id}>
+                <Link
+                  className={`nav-link scrollto ${
+                    location.pathname === item.navLink ? "nav-active active" : ""
+                  }`}
+                  to={item.navLink}
+                >
+                  {item.navName}
+                </Link>
+              </li>
+            ))}
           </ul>
           <i className="bi bi-list mobile-nav-toggle"></i>
         </nav>
         {/* End of .navbar */}
-{/* 
-        <a
-          href="tel:+351219291516"
-          className="book-a-table-btn scrollto d-none d-lg-flex"
-        >
-          Book a table
-        </a> */}
       </div>
     </header>
   );
 }
 
+// PropTypes definition
+Header.propTypes = {
+  HeaderNavDataPt: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      navName: PropTypes.string.isRequired,
+      navLink: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
 export default Header;
+

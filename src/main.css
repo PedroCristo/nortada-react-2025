@@ -1,16 +1,22 @@
 /*******************************
+*        GOOGLE FONTS      *
+*******************************/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+/*******************************
 *        GENERAL STYLES        *
 *******************************/
 
 * {
   margin: 0;
   padding: 0;
-      box-sizing: border-box;
+  box-sizing: border-box;
 
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Nunito Sans", serif;
     background: #0c0b09 !important;
     color: #fff;
   }
@@ -26,7 +32,6 @@ body {
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Playfair Display", serif;
     color: white !important;
   }
 
@@ -262,6 +267,7 @@ body {
   
   .navbar li {
     position: relative;
+    margin-left: 15px;
   }
   
   .navbar a {
@@ -279,6 +285,12 @@ body {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
+  }
+
+  .navbar .nav-active {
+    border: 1px solid #d9ba85 ;
+    padding: 5px 10px;
+
   }
   
   .navbar a:hover, .navbar .active, .navbar li:hover > a {
@@ -484,7 +496,6 @@ body {
     font-weight: 700;
     line-height: 56px;
     color: #fff;
-    font-family: "Poppins", sans-serif;
   }
   
   #hero h1 span {
@@ -675,7 +686,6 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #aaaaaa;
-    font-family: "Poppins", sans-serif;
   }
   
   .section-title h2::after {
@@ -692,7 +702,6 @@ body {
     margin: 0;
     font-size: 36px;
     font-weight: 700;
-    font-family: "Playfair Display", serif;
     color: #cda45e;
   }
   
@@ -944,7 +953,6 @@ body {
     margin-bottom: 10px;
     transition: all ease-in-out 0.3s;
     border-radius: 50px;
-    font-family: "Playfair Display", serif;
   }
   
   .menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
@@ -984,7 +992,6 @@ body {
     top: -4px;
     z-index: 1;
     color: #bab3a6;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
   
   .menu .menu-content a {
@@ -1014,7 +1021,6 @@ body {
     margin-left: 85px;
     font-style: italic;
     font-size: 14px;
-    font-family: "Poppins", sans-serif;
     color: rgba(255, 255, 255, 0.5);
   }
   
@@ -1131,7 +1137,6 @@ body {
   
   .events .event-item .price {
     font-size: 26px;
-    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     margin-bottom: 15px;
   }
@@ -1499,7 +1504,6 @@ body {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 5px;
-    font-family: "Poppins", sans-serif;
   }
   
   .contact .info p {
@@ -1629,6 +1633,21 @@ body {
       transform: rotate(360deg);
     }
   }
+
+  /* Form */
+
+  form .btn {
+    border-radius: 2px !important;
+    background-color:  transparent !important;
+    border: 1px solid #d3af71 !important;
+    padding: 10px 50px !important;
+    margin-bottom: 40px;
+  }
+  
+  form .btn:hover {
+    background-color:  #d3af71 !important;
+    border: 1px solid #f8f8f8 !important;
+  }
   
   /*--------------------------------------------------------------
   # Footer
@@ -1658,14 +1677,12 @@ body {
     line-height: 1;
     font-weight: 300;
     text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
   }
   
   #footer .footer-top .footer-info p {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
-    font-family: "Playfair Display", serif;
     color: #fff;
   }
   
