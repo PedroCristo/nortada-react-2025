@@ -40,3 +40,24 @@
     }
 
 }
+
+@media only screen and (max-width: 500px) {
+    #topbar .contact-info i span,
+    #topbar .schedule {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 555px) {
+    #topbar .contact-info i span,
+    #topbar .schedule {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    #topbar .contact-info i span,
+    #topbar .schedule {
+        font-size: 10px;
+    }
+}

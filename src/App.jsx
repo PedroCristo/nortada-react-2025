@@ -8,6 +8,7 @@ import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import AOS CSS
 import HomePt from "./pages/pt/HomePt.jsx";
 import MenuPt from "./pages/pt/MenuPt.jsx";
+import PrivacyCokkiesPolicyPt from "./pages/pt/PrivacyCookiesPolicyPt.jsx";
 import PageNotFound from "./pages/error/404.jsx";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<HomePt />} />
         <Route path="menu-pt" exact element={<MenuPt />} />
+        <Route path="politica-privacidade-cookies" exact element={<PrivacyCokkiesPolicyPt />} />
         <Route path="*" exact element={<PageNotFound />} />
       </Routes>
     </>
