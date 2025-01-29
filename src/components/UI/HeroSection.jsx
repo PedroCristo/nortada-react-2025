@@ -17,8 +17,8 @@ function HeroSection({
       >
         <div className="row">
           <div className="col-lg-8">
-            <h1>
-              <span>{title}</span>
+            <h1 className="mb-2">
+              <span className="title-brand">{title}</span>
             </h1>
             <h2>{sub_title}</h2>
 

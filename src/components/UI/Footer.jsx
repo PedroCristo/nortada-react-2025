@@ -20,7 +20,7 @@ const Footer = ({ copy_1, copy_2 }) => {
             </div>
             <div className="col-md-6 d-flex justify-content-end align-items-end">
               <div className="copyright">
-              <i class="bi bi-shield-lock"></i>  Copyright |{" "}
+              <i className="bi bi-shield-lock"></i>  Copyright |{" "}
                 <strong>
                   <span>{copy_1} |</span>
                 </strong>

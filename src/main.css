@@ -1,7 +1,11 @@
 /*******************************
 *        GOOGLE FONTS      *
 *******************************/
+/* NUNITO */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* MAECELLUS */
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 
 /*******************************
@@ -39,6 +43,12 @@ body {
     color: white;
   }
 
+  .title-brand {
+    font-family: "Marcellus", serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-style: normal;
+  }
   .section-title {
     font-size: 3rem !important;
   }
@@ -50,6 +60,19 @@ body {
     position: relative;
     background-attachment: fixed;
     width: 100%;
+  }
+
+  .btn {
+    border-radius: 2px !important;
+    background-color:  transparent !important;
+    border: 1px solid #d3af71 !important;
+    padding: 10px 50px !important;
+    margin-bottom: 40px;
+  }
+  
+ .btn:hover {
+    background-color:  #d3af71 !important;
+    border: 1px solid #f8f8f8 !important;
   }
 
 /*******************************
@@ -1634,21 +1657,6 @@ body {
     }
   }
 
-  /* Form */
-
-  form .btn {
-    border-radius: 2px !important;
-    background-color:  transparent !important;
-    border: 1px solid #d3af71 !important;
-    padding: 10px 50px !important;
-    margin-bottom: 40px;
-  }
-  
-  form .btn:hover {
-    background-color:  #d3af71 !important;
-    border: 1px solid #f8f8f8 !important;
-  }
-  
   /*--------------------------------------------------------------
   # Footer
   --------------------------------------------------------------*/
@@ -1823,10 +1831,8 @@ body {
   } 
   
 
-  /*******************************
-*                              *
+/*******************************
 *           404 PAGE           *
-*                              *
 *******************************/
 .page404 {
   background-image: url(../public/images/desktop/gallery/nortada_10.jpg);
@@ -1889,3 +1895,59 @@ body {
 .page404 .btn {
   margin-right: 25px;
 }
+
+
+/*******************************
+*        COOKIES BOX           *
+*******************************/
+.alert-box {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px); /* Start below */
+  width: 50%;
+  max-width: 600px;
+  background-color: #f1f1f1;
+  padding: 20px 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0; /* Initially hidden */
+  animation: fadeInSlideUp 1.5s ease-out forwards;
+  animation-delay: 5s; /* Start animation after 5 seconds */
+}
+
+@keyframes fadeInSlideUp {
+  from {
+    transform: translateX(-50%) translateY(50px); /* Start offset */
+    opacity: 0; /* Fully transparent */
+  }
+  to {
+    transform: translateX(-50%) translateY(0); /* Final position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.alert-box p {
+  color: #0c0b09;
+  width: 95%;
+  margin-left: 25px;
+  font-size: 0.9rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.button-container button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+

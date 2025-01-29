@@ -3,6 +3,7 @@ import HeaderPt from "../../components/pt/HeaderPt";
 import HeaderMenuPt from "../../components/pt/HeaderMenuPt";
 import MenuSection from "../../components/UI/MenuSection";
 import FooterPt from "../../components/pt/fOOTERpT.JSX";
+import CookiesAlertPt from "../../components/pt/CookiesAlertPt";
 
 function MenuPt() {
   return (
@@ -12,6 +13,7 @@ function MenuPt() {
       <HeaderMenuPt />
       <MenuSection />
       <FooterPt />
+      <CookiesAlertPt />
     </div>
   );
 }

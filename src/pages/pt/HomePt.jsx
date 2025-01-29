@@ -8,6 +8,7 @@ import PressSectionPt from "../../components/pt/PressSectionPt";
 import BannerPt_2 from "../../components/pt/BannerPt_2";
 import ContactSectionPt from "../../components/pt/ContactSectionPt";
 import FooterPt from "../../components/pt/fOOTERpT.JSX";
+import CookiesAlertPt from "../../components/pt/CookiesAlertPt";
 
 
 function HomePt() {
@@ -23,6 +24,7 @@ function HomePt() {
       <BannerPt_2 />
       <ContactSectionPt />
       <FooterPt />
+      <CookiesAlertPt />
     </div>
   );
 }
