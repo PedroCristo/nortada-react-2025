@@ -1,10 +1,10 @@
 import HeroSection from "../UI/HeroSection";
-import HeroSectionDataPt from "../../data/pt/hero-section";
+import HeroSectionDataEn from "../../data/en/HeroSection";
 
-function HeroSectionPt() {
+function HeroSectionEn() {
   return (
     <div>
-      {HeroSectionDataPt.map((item) => (
+      {HeroSectionDataEn.map((item) => (
         <HeroSection
           key={item.id}
           title={item.title}
@@ -19,4 +19,4 @@ function HeroSectionPt() {
   );
 }
 
-export default HeroSectionPt;
+export default HeroSectionEn;

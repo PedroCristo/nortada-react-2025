@@ -28,6 +28,13 @@
     }
 }
 
+@media only screen and (max-width: 850px) {
+    #header-menu {
+        height: 25vh;
+        background-position: 0 -120px;
+      }
+}
+
 @media only screen and (max-width: 600px) {
 
     .page404 .content-box .title {
@@ -41,6 +48,22 @@
 
 }
 
+@media only screen and (max-width: 555px) {
+    #topbar .contact-info i span,
+    #topbar .schedule {
+        font-size: 11px;
+    }
+
+    #footer .footer-top {
+        padding: 0 15px;
+    }
+
+    .policy-links {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     #topbar .contact-info i span,
     #topbar .schedule {
@@ -48,12 +71,6 @@
     }
 }
 
-@media only screen and (max-width: 555px) {
-    #topbar .contact-info i span,
-    #topbar .schedule {
-        font-size: 11px;
-    }
-}
 
 @media only screen and (max-width: 405px) {
     #topbar .contact-info i span,

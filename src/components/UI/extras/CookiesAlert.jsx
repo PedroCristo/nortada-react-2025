@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 // CookieAlert Component
 function CookieAlert({
@@ -8,6 +9,8 @@ function CookieAlert({
   declineButtonText,
   onAccept,
   onDecline,
+  policy_name,
+  policy_url
 }) {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -33,7 +36,7 @@ function CookieAlert({
 
   return (
     <div className="alert-box container">
-      <p>{message}</p>
+      <p>{message} <span><Link className="custom-link" to={policy_url}>{policy_name}</Link></span></p>
       <div className="button-container">
         <button className="btn" onClick={handleAccept}>
           {acceptButtonText}
@@ -49,6 +52,8 @@ function CookieAlert({
 // PropTypes for validation
 CookieAlert.propTypes = {
   message: PropTypes.string.isRequired,
+  policy_name: PropTypes.string.isRequired,
+  policy_url: PropTypes.string.isRequired,
   acceptButtonText: PropTypes.string.isRequired,
   declineButtonText: PropTypes.string.isRequired,
   onAccept: PropTypes.func.isRequired,

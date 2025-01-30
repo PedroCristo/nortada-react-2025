@@ -1,11 +1,14 @@
 import PrivacyCookiesPolicy from "../UI/PrivacyAndCokiesPolicy";
-import privacyPolicyDataPT from "../../data/pt/Privacy-cookies-policy";
+import privacyPolicyDataPT from "../../data/pt/privacy-policy";
+import cookiesPolicyDataPt from "../../data/pt/cookies-policy";
 
 function PrivacyCokiesPolicyPt() {
     return (
         <div>
             <PrivacyCookiesPolicy
-                privacyPolicyDataPT={privacyPolicyDataPT}  // Pass the prop as expected
+                privacyPolicyDataPT={privacyPolicyDataPT}  
+                cookiesPolicyDataPt={cookiesPolicyDataPt} 
+                policy_title={"Política de Privacidade"} 
             />
         </div>
     );

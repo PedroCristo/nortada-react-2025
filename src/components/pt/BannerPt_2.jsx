@@ -1,10 +1,10 @@
 import BannerSection from "../UI/BannerSection";
-import BannerDataPt_1 from "../../data/pt/banner-1";
+import BannerDataPt_2 from "../../data/pt/banner-2";
 
 function BannerPt_2() {
   return (
     <div>
-      {BannerDataPt_1.map((item) => (
+      {BannerDataPt_2.map((item) => (
         <BannerSection
           key={item.id}
           banner_title={item.banner_title}

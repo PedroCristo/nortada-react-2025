@@ -10,6 +10,7 @@ import HomePt from "./pages/pt/HomePt.jsx";
 import MenuPt from "./pages/pt/MenuPt.jsx";
 import PrivacyCokkiesPolicyPt from "./pages/pt/PrivacyCookiesPolicyPt.jsx";
 import PageNotFound from "./pages/error/404.jsx";
+import HomeEn from "./pages/en/HomeEn.jsx";
 
 function App() {
   useEffect(() => {
@@ -35,8 +36,9 @@ function App() {
       <Routes>
         <Route path="/" exact element={<HomePt />} />
         <Route path="menu-pt" exact element={<MenuPt />} />
-        <Route path="politica-privacidade-cookies" exact element={<PrivacyCokkiesPolicyPt />} />
+        <Route path="política-de-privacidade-e-cookies" exact element={<PrivacyCokkiesPolicyPt />} />
         <Route path="*" exact element={<PageNotFound />} />
+        <Route path="home-en" exact element={<HomeEn />} />
       </Routes>
     </>
   );

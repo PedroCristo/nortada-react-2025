@@ -9,7 +9,7 @@ function HeaderMenu({ menu_title }) {
       <div className="container">
         <div className="row">
           <div className="col-md-12 text-center mt-5">
-            <h2 className="section-title mt-5">{menu_title}</h2>
+            <h2 className="mt-5">{menu_title}</h2>
           </div>
         </div>
       </div>

@@ -2,7 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const Footer = ({ copy_1, copy_2 }) => {
+const Footer = ({
+  copy_1,
+  copy_2,
+  policy_url,
+  policy_name,
+  cookies_url,
+  cookies_name,
+}) => {
   const currentYear = new Date().getFullYear();
   return (
     <footer id="footer">
@@ -36,10 +43,13 @@ const Footer = ({ copy_1, copy_2 }) => {
                 {copy_2} | 2024 - {currentYear}
               </div>
             </div>
+            <div className="policy-links d-flex justify-content-end align-items-end">
+              <span className="mr-5 mt-2"> <Link  className="custom-link" to={policy_url}>{policy_name}</Link></span>&nbsp; |&nbsp;
+              <span className="ml-5 mt-2"> <Link  className="custom-link" to={cookies_url}>{cookies_name}</Link></span>
+            </div>
           </div>
         </div>
       </div>
-              <Link to="/politica-privacidade-cookies">POLICY</Link>
     </footer>
   );
 };
@@ -47,6 +57,10 @@ const Footer = ({ copy_1, copy_2 }) => {
 Footer.propTypes = {
   copy_1: PropTypes.string.isRequired,
   copy_2: PropTypes.string.isRequired,
+  policy_url: PropTypes.string.isRequired,
+  policy_name: PropTypes.string.isRequired,
+  cookies_url: PropTypes.string.isRequired,
+  cookies_name: PropTypes.string.isRequired,
 };
 
 export default Footer;

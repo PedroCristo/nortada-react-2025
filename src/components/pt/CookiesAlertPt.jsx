@@ -24,6 +24,8 @@ function CookiesAlertPt() {
         declineButtonText={"Recusar"}
         onAccept={handleAccept}
         onDecline={handleDecline}
+        policy_name={"Política de Privacidade"}
+        policy_url={"/política-de-privacidade-e-cookies"}
       />
     </div>
   );
