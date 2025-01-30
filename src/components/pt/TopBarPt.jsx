@@ -1,9 +1,16 @@
 import TopBar from "../UI/TopBar";
 import TopBarDataPT from "../../data/pt/top-bar";
-import companySchedulePt from "../../js/company-shedule";
+import companySchedule from "../../js/company-shedule";
+
+const scheduleMessagesPT = {
+  tuesdayClosed: "Estamos encerrados às Terças",
+  open: "Estamos Abertos",
+  closed: "Estamos Encerrados",
+};
 
 function TopBarPt() {
-  const dynamically_schedule = companySchedulePt()
+  const dynamically_schedule = companySchedule(scheduleMessagesPT) || { message: "", color: "" };
+
   return (
     <div>
       {TopBarDataPT.map((item) => (
@@ -22,3 +29,4 @@ function TopBarPt() {
 }
 
 export default TopBarPt;
+

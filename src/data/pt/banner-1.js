@@ -1,5 +1,3 @@
-
-
 const BannerDataPt_1 = [
     {
         id: 1,

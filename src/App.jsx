@@ -11,6 +11,7 @@ import MenuPt from "./pages/pt/MenuPt.jsx";
 import PrivacyCokkiesPolicyPt from "./pages/pt/PrivacyCookiesPolicyPt.jsx";
 import PageNotFound from "./pages/error/404.jsx";
 import HomeEn from "./pages/en/HomeEn.jsx";
+import PrivacyCokkiesPolicyEn from "./pages/en/PrivacyCookiesPolicyEn.jsx";
 
 function App() {
   useEffect(() => {
@@ -39,6 +40,7 @@ function App() {
         <Route path="política-de-privacidade-e-cookies" exact element={<PrivacyCokkiesPolicyPt />} />
         <Route path="*" exact element={<PageNotFound />} />
         <Route path="home-en" exact element={<HomeEn />} />
+        <Route path="privacy-policy-cookies" exact element={<PrivacyCokkiesPolicyEn />} />
       </Routes>
     </>
   );

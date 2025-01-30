@@ -1,19 +1,26 @@
 import TopBar from "../UI/TopBar";
-import TopBarDataEn from "../../data/en/top-bar";
-import companySchedulePt from "../../js/company-shedule";
+import TopBarDataEN from "../../data/en/top-bar";
+import companySchedule from "../../js/company-shedule";
+
+const scheduleMessagesEN = {
+  tuesdayClosed: "We Are closed on Tuesdays",
+  open: "We are Open",
+  closed: "We are Closed",
+};
 
 function TopBarEn() {
-  const dynamically_schedule = companySchedulePt()
+  const dynamically_schedule = companySchedule(scheduleMessagesEN);
+
   return (
     <div>
-      {TopBarDataEn.map((item) => (
+      {TopBarDataEN.map((item) => (
         <TopBar 
           key={item.id}
           phone_number={item.phone_number}
           time_shedule={item.time_shedule}
           lang1="EN" 
           lang2="PT" 
-          langUrl="/" 
+          langUrl="/home-pt" 
           dynamically_schedule={dynamically_schedule}
         />
       ))}
