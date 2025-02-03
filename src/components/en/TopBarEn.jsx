@@ -20,7 +20,7 @@ function TopBarEn() {
           time_shedule={item.time_shedule}
           lang1="EN" 
           lang2="PT" 
-          langUrl="/home-pt" 
+          langUrl="/" 
           dynamically_schedule={dynamically_schedule}
         />
       ))}

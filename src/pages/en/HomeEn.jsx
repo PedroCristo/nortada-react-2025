@@ -4,6 +4,7 @@ import HeroSectionEn from "../../components/en/HeroSectionEn";
 import AboutSectionEn from "../../components/en/AboutSectionEn";
 import BannerEn_1 from "../../components/en/BannerEn_1";
 import GallerySectionEn from "../../components/en/GallerySectionEn";
+import PressSectionEn from "../../components/en/PressSectionEn";
 import BannerEn_2 from "../../components/en/BannerEn_2";
 import ContactSectionEn from "../../components/en/ContactSectionEn";
 import FooterEn from "../../components/en/FooterEn";
@@ -19,6 +20,7 @@ function HomeEn() {
             <AboutSectionEn />
             <BannerEn_1 />
             <GallerySectionEn />
+            <PressSectionEn />
             <BannerEn_2 />
             <ContactSectionEn />
             <FooterEn />

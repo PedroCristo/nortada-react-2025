@@ -22,7 +22,7 @@ export function useChristmasMessage(christmasMessages = {}) {
     let displayStyle = "none";
     let opacity = "0";
     let position = "absolute";
-    let width = "0%";
+    let width = "0";
 
     if ((tm === 11 && tda >= 10) || (tm === 0 && tda <= 10)) {
       displayMessage =
@@ -32,8 +32,8 @@ export function useChristmasMessage(christmasMessages = {}) {
 
       displayStyle = "block";
       opacity = "1";
-      position = "relative";
-      width = "100%";
+      position = "absolute";
+      width = "50%";
     }
 
     // Fade-in effect after 6 seconds
@@ -43,7 +43,7 @@ export function useChristmasMessage(christmasMessages = {}) {
       setOpacityStyle(opacity);
       setPositionStyle(position);
       setWidthStyle(width);
-    }, 6000);
+    }, 0);
   }, [christmasMessages]);
 
   return {

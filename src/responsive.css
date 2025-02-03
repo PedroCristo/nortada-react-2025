@@ -32,7 +32,26 @@
     #header-menu {
         height: 25vh;
         background-position: 0 -120px;
-      }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    #ChristmasMessage {
+        width: 70% !important;
+    }
+
+    #ChristmasMessage .title-box h4 {
+        font-size: 1.3rem;
+    }
+
+    .bi-x-lg {
+        cursor: pointer;
+        opacity: 1;
+        position: absolute;
+        top: -35px;
+        right: 25px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -49,6 +68,7 @@
 }
 
 @media only screen and (max-width: 555px) {
+
     #topbar .contact-info i span,
     #topbar .schedule {
         font-size: 11px;
@@ -65,6 +85,14 @@
 }
 
 @media only screen and (max-width: 500px) {
+    #ChristmasMessage {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     #topbar .contact-info i span,
     #topbar .schedule {
         font-size: 12px;
@@ -73,6 +101,7 @@
 
 
 @media only screen and (max-width: 405px) {
+
     #topbar .contact-info i span,
     #topbar .schedule {
         font-size: 10px;

@@ -1,32 +1,42 @@
-function ChristmasMessage() {
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+
+function ChristmasMessage({  message, opacityStyle, positionStyle, widthStyle }) {
+  const [isMenuActive, setIsMenuActive] = useState(false);
+
+
+
+  const hideChristmasMessage = () => {
+    setIsMenuActive(true); // Add 'active' class when hiding message
+  };
+
   return (
     <div
       id="ChristmasMessage"
-      className="set-bg d-flex justify-center aligh-items center"
+      style={{
+        opacity: opacityStyle,
+        position: positionStyle,
+        width: widthStyle,
+      }}
+      className={`set-bg d-flex justify-content-center align-items-center ${isMenuActive ? "active" : ""}`}
     >
-      <div className="toggler" onClick={toggleMenu}>
-        {isActive ? (
-          <i className={`fa fa-times ${isActive ? "active" : ""}`}></i>
-        ) : (
-          <i className="fa fa-bars"></i>
-        )}
-      </div>
-      {isChristmasVisible && (
-        <div
-          style={{
-            display: christmasStyle,
-            opacity: opacityStyle,
-            position: positionStyle,
-            width: widthStyle,
-          }}
-          className="christmas"
-        >
+        <div className="title-box">
+          <i className="bi bi-x-lg text-danger mb-5" style={{opacity: opacityStyle,}} onClick={hideChristmasMessage}></i>
           <h4>{message}</h4>
-          <i className="fa fa-times" onClick={hideChristmasMessage}></i>
         </div>
-      )}
     </div>
   );
 }
 
+// PropTypes
+ChristmasMessage.propTypes = {
+  message: PropTypes.string,
+  opacityStyle: PropTypes.string,
+  positionStyle: PropTypes.string,
+  widthStyle: PropTypes.string,
+};
+
+
 export default ChristmasMessage;
+
+
