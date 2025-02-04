@@ -1,7 +1,7 @@
 import TopBarPt from "../../components/pt/TopBarPt";
 import HeaderPt from "../../components/pt/HeaderPt";
-import HeaderMenuPt from "../../components/pt/HeaderMenuPt";
-import MenuSection from "../../components/UI/MenuSection";
+import HeaderMenu from "../../components/UI/HeaderMenu";
+import MenuSectionPt from "../../components/pt/MenuSectionPt";
 import FooterPt from "../../components/pt/fOOTERpT.JSX";
 import CookiesAlertPt from "../../components/pt/CookiesAlertPt";
 
@@ -10,8 +10,8 @@ function MenuPt() {
     <div>
       <TopBarPt />
       <HeaderPt />
-      <HeaderMenuPt />
-      <MenuSection />
+      <HeaderMenu menu_title={"Ementa"} />
+      <MenuSectionPt />
       <FooterPt />
       <CookiesAlertPt />
     </div>

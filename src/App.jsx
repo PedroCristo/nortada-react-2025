@@ -9,8 +9,9 @@ import 'aos/dist/aos.css'; // Import AOS CSS
 import HomePt from "./pages/pt/HomePt.jsx";
 import MenuPt from "./pages/pt/MenuPt.jsx";
 import PrivacyCokkiesPolicyPt from "./pages/pt/PrivacyCookiesPolicyPt.jsx";
-import PageNotFound from "./pages/error/404.jsx";
 import HomeEn from "./pages/en/HomeEn.jsx";
+import MenuEn from "./pages/en/MenuEn.jsx";
+import PageNotFound from "./pages/error/404.jsx";
 import PrivacyCokkiesPolicyEn from "./pages/en/PrivacyCookiesPolicyEn.jsx";
 
 function App() {
@@ -38,9 +39,10 @@ function App() {
         <Route path="/" exact element={<HomePt />} />
         <Route path="menu-pt" exact element={<MenuPt />} />
         <Route path="política-de-privacidade-e-cookies" exact element={<PrivacyCokkiesPolicyPt />} />
-        <Route path="*" exact element={<PageNotFound />} />
         <Route path="home-en" exact element={<HomeEn />} />
+        <Route path="menu-en" exact element={<MenuEn />} />
         <Route path="privacy-policy-cookies" exact element={<PrivacyCokkiesPolicyEn />} />
+        <Route path="*" exact element={<PageNotFound />} />
       </Routes>
     </>
   );
