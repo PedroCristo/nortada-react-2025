@@ -6,6 +6,7 @@ function AboutSection({
   paragraph_3,
   paragraph_4,
   paragraph_5,
+  paragraph_6,
   section_title,
 }) {
   return (
@@ -19,7 +20,7 @@ function AboutSection({
             data-aos-delay="100"
           >
             <div className="about-img">
-              <img src="/images/extras/nortada_6.jpg" alt="" />
+              <img src="/images/extras/nortada_12.jpg" alt="" />
             </div>
             <div className="about-img mt-4 display-none-991">
               <img src="/images/extras/nortada_6.jpg" alt="" />
@@ -35,6 +36,7 @@ function AboutSection({
             <p>{paragraph_3}</p>
             <p>{paragraph_4}</p>
             <p>{paragraph_5}</p>
+            <p>{paragraph_6}</p>
           </div>
         </div>
       </div>
@@ -49,6 +51,7 @@ AboutSection.propTypes = {
   paragraph_3: PropTypes.string.isRequired,
   paragraph_4: PropTypes.string.isRequired,
   paragraph_5: PropTypes.string.isRequired,
+  paragraph_6: PropTypes.string.isRequired,
   section_title: PropTypes.string.isRequired,
 };
 

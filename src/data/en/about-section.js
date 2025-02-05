@@ -13,7 +13,10 @@ const AboutsectionDataEn = [
         paragraph_4: "In addition to the cuisine, Restaurante Nortada offers truly magical moments, such as watching a sunset that leaves anyone speechless, \
         where the horizon is painted in golden and orange hues. Here, you won’t be treated just as a customer, but as part of the family.",
         paragraph_5: "Let yourself be enveloped by the warm atmosphere and the care of a team dedicated to creating unforgettable memories. At Restaurante \
-        Nortada, you will feel you have found the perfect seaside spot."
+        Nortada, you will feel you have found the perfect seaside spot.",
+        paragraph_6: "Whether for a romantic dinner for two, a gathering with friends, or a special celebration, Restaurante Nortada adapts to every occasion \
+        with attentive and personalized service. The serene and elegant atmosphere, combined with the exceptional quality of the dishes, makes this place a \
+        must-visit destination for those who appreciate fine cuisine and genuine hospitality."
     },
 ];
 

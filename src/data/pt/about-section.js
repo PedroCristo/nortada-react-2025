@@ -18,7 +18,10 @@ const AboutsectionDataPt = [
         como assistir a um pôr do sol que deixa qualquer um sem palavras, onde o horizonte se pinta de tons dourados e \
         laranja. Aqui, não será tratado apenas como um cliente, mas como parte da família.",
         paragraph_5: "Deixe-se envolver pela atmosfera calorosa e pelo cuidado de uma equipa dedicada a proporcionar \
-        memórias inesquecíveis. No Restaurante Nortada, sentirá que encontrou o lugar perfeito à beira-mar."
+        memórias inesquecíveis. No Restaurante Nortada, sentirá que encontrou o lugar perfeito à beira-mar.",
+        paragraph_6: "Seja para uma refeição romântica a dois, um encontro de amigos ou uma celebração especial, o Restaurante \
+        Nortada adapta-se a cada ocasião com um serviço atencioso e personalizado. O ambiente sereno e elegante, aliado à qualidade \
+        excecional dos pratos, faz deste espaço um destino obrigatório para quem valoriza a boa gastronomia e a hospitalidade genuína."
     },
 ];
 

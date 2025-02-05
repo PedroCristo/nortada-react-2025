@@ -28,12 +28,12 @@ const galleryDataImages = [
     },
     {
         id: 1,
-        image_url_desktop: "/images/desktop/gallery/nortada_15.jpg",
+        image_url_desktop: "/images/desktop/gallery/nortada_2.jpg",
         image_url_tablet: "",
     },
     {
         id: 1,
-        image_url_desktop: "/images/desktop/gallery/nortada_17.jpg",
+        image_url_desktop: "/images/desktop/gallery/nortada_13.jpg",
         image_url_tablet: "",
     },
     {

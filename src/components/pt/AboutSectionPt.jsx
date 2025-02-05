@@ -13,6 +13,7 @@ function AboutSectionPt() {
         paragraph_3={item.paragraph_3}
         paragraph_4={item.paragraph_4}
         paragraph_5={item.paragraph_5}
+        paragraph_6={item.paragraph_6}
         />
       ))}
     </div>
