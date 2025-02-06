@@ -7,7 +7,7 @@ import GallerySectionPt from "../../components/pt/GallerySectionPt";
 import PressSectionPt from "../../components/pt/PressSectionPt";
 import BannerPt_2 from "../../components/pt/BannerPt_2";
 import ContactSectionPt from "../../components/pt/ContactSectionPt";
-import FooterPt from "../../components/pt/fOOTERpT.JSX";
+import FooterPt from "../../components/pt/FooterPt.JSX";
 import CookiesAlertPt from "../../components/pt/CookiesAlertPt";
 
 
