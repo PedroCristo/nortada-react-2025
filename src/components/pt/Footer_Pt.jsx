@@ -1,6 +1,6 @@
 import Footer from "../UI/Footer";
 
-function FooterPt() {
+function Footer_Pt() {
     return(
         <div>
             <Footer 
@@ -15,4 +15,4 @@ function FooterPt() {
     );
 }
 
-export default FooterPt;
+export default Footer_Pt;
