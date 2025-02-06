@@ -24,7 +24,7 @@ export function useChristmasMessage(christmasMessages = {}) {
     let position = "absolute";
     let width = "0";
 
-    if ((tm === 11 && tda >= 10) || (tm === 0 && tda <= 10)) {
+    if ((tm === 11 && tda >= 5) || (tm === 0 && tda <= 10)) {
       displayMessage =
         tm === 11
           ? `${christmasGreeting} de ${currentYear + 1}`
@@ -33,7 +33,7 @@ export function useChristmasMessage(christmasMessages = {}) {
       displayStyle = "block";
       opacity = "1";
       position = "absolute";
-      width = "50%";
+      width = "90%";
     }
 
     // Fade-in effect after 6 seconds

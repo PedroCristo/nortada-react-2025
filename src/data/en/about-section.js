@@ -2,6 +2,7 @@ const AboutsectionDataEn = [
     {
         id: 1,
         section_title: "About Us",
+        sub_title: "Restaurant Nortada since 1979",
         paragraph_1: "Restaurante Nortada was founded in 1979 by Manuel Esteves da Silva and Maria Elisa Esteves da Silva. Over more than four decades, \
         this iconic space has been managed by the same family, who preserves and honors the values of its founders: serving with excellence, in a \
         family-friendly, welcoming, and authentic atmosphere.",

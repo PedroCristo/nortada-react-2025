@@ -21,7 +21,7 @@ function ContactSection({
       <div className="container" data-aos="fade-up">
         <div className="section-title">
           <h2>{section_title}</h2>
-          <p>{sub_title}</p>
+          <p className="fst-italic">{sub_title}</p>
         </div>
       </div>
 

@@ -8,11 +8,15 @@ function AboutSection({
   paragraph_5,
   paragraph_6,
   section_title,
+  sub_title
 }) {
   return (
     <section id="about" className="about">
       <div className="container" data-aos="fade-up">
-        <h3 className="section-title">{section_title}</h3>
+        <div className="section-title">
+          <h2>{section_title}</h2>
+          <p className="fst-italic">{sub_title}</p>
+        </div>
         <div className="row">
           <div
             className="col-lg-5 order-1 order-lg-2"
@@ -27,10 +31,6 @@ function AboutSection({
             </div>
           </div>
           <div className="col-lg-7 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <p className="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
             <p>{paragraph_1}</p>
             <p>{paragraph_2}</p>
             <p>{paragraph_3}</p>
@@ -53,6 +53,7 @@ AboutSection.propTypes = {
   paragraph_5: PropTypes.string.isRequired,
   paragraph_6: PropTypes.string.isRequired,
   section_title: PropTypes.string.isRequired,
+  sub_title: PropTypes.string.isRequired,
 };
 
 export default AboutSection;

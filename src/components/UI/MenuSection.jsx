@@ -1,21 +1,32 @@
 import React, { useState } from "react";
 import useFetchCSVData from "../../data/ExternalDB/fetch-data";
 import PropTypes from "prop-types";
+import Preloader from "./extras/Preloader.jsx";
 
-function MenuSection({ 
-  menu_title, 
-  menu_sub_title, 
-  menu_all, 
-  menu_menu, 
-  menu_desserts, 
-  menu_wines, 
-  useFetchData 
+function MenuSection({
+  menu_title,
+  menu_sub_title,
+  menu_all,
+  menu_menu,
+  menu_desserts,
+  menu_wines,
+  useFetchData,
 }) {
   const [filter, setFilter] = useState("*");
   const { csvData, loading, error } = useFetchCSVData(useFetchData);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
+  if (loading)
+    return (
+      <div>
+        <Preloader />
+      </div>
+    );
+  if (error)
+    return (
+      <div className="container p-5">
+        <div className="row d-flex justify-content-center align-items-center text-warning">Error: {error.message}</div>
+      </div>
+    );
 
   // Group the data by subCategory
   const groupedData = csvData.reduce((acc, item) => {
@@ -39,7 +50,9 @@ function MenuSection({
             <ul id="menu-flters" className="list-unstyled d-flex">
               <li
                 onClick={() => setFilter("*")}
-                className={`filter-active mx-2 ${filter === "*" ? "filter-active" : ""}`}
+                className={`filter-active mx-2 ${
+                  filter === "*" ? "filter-active" : ""
+                }`}
               >
                 {menu_all}
               </li>
@@ -51,7 +64,9 @@ function MenuSection({
               </li>
               <li
                 onClick={() => setFilter("desserts")}
-                className={`mx-2 ${filter === "desserts" ? "filter-active" : ""}`}
+                className={`mx-2 ${
+                  filter === "desserts" ? "filter-active" : ""
+                }`}
               >
                 {menu_desserts}
               </li>
@@ -65,11 +80,17 @@ function MenuSection({
           </div>
         </div>
 
-        <div className="row menu-container" data-aos="fade-up" data-aos-delay="200">
+        <div
+          className="row menu-container"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           {Object.keys(groupedData).map((subCategory, index) => {
             const filteredItems = groupedData[subCategory].filter(
               (item) =>
-                (filter === "*" || (item.category && item.category.toLowerCase() === filter.toLowerCase())) &&
+                (filter === "*" ||
+                  (item.category &&
+                    item.category.toLowerCase() === filter.toLowerCase())) &&
                 item.displayOn === "TRUE"
             );
 
@@ -83,7 +104,10 @@ function MenuSection({
 
                 <div className="row">
                   {filteredItems.map((item, idx) => (
-                    <div key={idx} className={`col-lg-6 menu-item ${item.category}`}>
+                    <div
+                      key={idx}
+                      className={`col-lg-6 menu-item ${item.category}`}
+                    >
                       <div className="menu-content">
                         <span>{item.name}</span>
                         <span className="price">{item.price}</span>

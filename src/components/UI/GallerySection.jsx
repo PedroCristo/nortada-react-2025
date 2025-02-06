@@ -15,7 +15,7 @@ function GallerySection({ gallery_title, gallery_sub_title }) {
       <div className="container" data-aos="fade-up">
         <div className="section-title">
           <h2>{gallery_title}</h2>
-          <p>{gallery_sub_title}</p>
+          <p className="fst-italic">{gallery_sub_title}</p>
         </div>
       </div>
 

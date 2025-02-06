@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <ScrollToTop />
       <App />
       <BackToTop />
-      <Preloader />
+      {/* <Preloader /> */}
     </Router>
   </React.StrictMode>
 );

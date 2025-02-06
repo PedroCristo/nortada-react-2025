@@ -33,7 +33,7 @@ function FormSection({
       action=""
       method="post"
       role="form"
-      className="php-email-form"
+      className="email-form"
       onSubmit={handleSubmit}
     >
       <div className="row">
@@ -89,7 +89,7 @@ function FormSection({
         </div>
         <div className="col-md-6">
       <ReCAPTCHA
-        sitekey={"6Lf9QKcqAAAAAB57O6NTG6To_pl_jXqRHkAZRbFV"}
+        sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
         onChange={handleRecaptchaChange}
         hl={"pt"}
       />

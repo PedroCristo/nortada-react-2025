@@ -10,7 +10,7 @@ const PressSection = ({ data }) => {
         {/* Section Title */}
         <div className="section-title">
           <h2>{title.section_title}</h2>
-          <p>{title.section_sub_title}</p>
+          <p className="fst-italic">{title.section_sub_title}</p>
         </div>
         {/* Dynamic Content */}
         <div className="row">

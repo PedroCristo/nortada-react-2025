@@ -8,6 +8,7 @@ function AboutSectionPt() {
         <AboutSection 
         key={item.id} 
         section_title={item.section_title} 
+        sub_title={item.sub_title} 
         paragraph_1={item.paragraph_1}
         paragraph_2={item.paragraph_2}
         paragraph_3={item.paragraph_3}

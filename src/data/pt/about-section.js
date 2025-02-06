@@ -2,6 +2,7 @@ const AboutsectionDataPt = [
     {
         id: 1,
         section_title: "Sobre Nós",
+        sub_title: "Restaurante Nortada desde 1979",
         paragraph_1: "O Restaurante Nortada foi fundado em 1979 por Manuel Esteves da Silva e \
         Maria Elisa Esteves da Silva. Ao longo de mais de quatro décadas, este espaço icónico tem \
         sido gerido pela mesma família, que preserva e honra os valores dos seus fundadores: servir \
