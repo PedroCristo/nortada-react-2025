@@ -1227,6 +1227,11 @@ section {
   border: none;
   cursor: pointer;
   transition: all 0.4s;
+  background-color: var(--white--color) !important;
+}
+
+.button-container button:hover {
+  background-color: #fff !important;
 }
 
 /*******************************
