@@ -1208,7 +1208,7 @@ section {
 }
 
 .alert-box p {
-  color: #0c0b09;
+  color: var(--black-color) !important;
   width: 95%;
   margin-left: 25px;
   font-size: 0.9rem;
