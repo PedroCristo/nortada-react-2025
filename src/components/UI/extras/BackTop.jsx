@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-function BackToTop() {
+function BackTop() {
   useEffect(() => {
     const backToTop = document.querySelector('.back-to-top');
 
@@ -42,4 +42,4 @@ function BackToTop() {
   );
 }
 
-export default BackToTop;
+export default BackTop;
