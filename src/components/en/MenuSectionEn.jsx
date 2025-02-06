@@ -10,7 +10,8 @@ function MenuSectionEn() {
         menu_menu={"Menu"}
         menu_desserts={"Desserts"}
         menu_wines={"Wines"}
-        useFetchData={import.meta.env.VITE_FETCH_DATA_URL_EN}
+        // useFetchData={import.meta.env.VITE_FETCH_DATA_URL_EN}
+        useFetchData={"https://docs.google.com/spreadsheets/d/e/2PACX-1vTPJA7vmjwDky-uUikoorHjU5KhYhmAZ1T3LZadewBBAeu8IXjRetwGJpAwQDJrS6yvCx73u7u6uxWa/pub?gid=1256592981&single=true&output=csv"}
       />
     </div>
   );

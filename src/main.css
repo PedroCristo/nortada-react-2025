@@ -208,12 +208,11 @@ section {
 }
 
 .back-to-top:hover {
-  background: var(--interactive-color) !important;
-  color: #1a1814;
+  background: var(--interactive-color) !important;;
 }
 
 .back-to-top:hover i {
-  color: #444444;
+  color: #444444 !important;
 }
 
 .back-to-top.active {

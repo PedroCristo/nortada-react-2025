@@ -89,7 +89,8 @@ function FormSection({
         </div>
         <div className="col-md-6">
       <ReCAPTCHA
-        sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+        // sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+        sitekey={"6Lfsr84qAAAAAFtyUbI1a8jXj7YOaxzZ6NQVZdL8"}
         onChange={handleRecaptchaChange}
         hl={"pt"}
       />
