@@ -4,7 +4,7 @@ function MenuSectionPt() {
   return (
     <div>
       <MenuSection
-        menu_title={"O Nosso Menu"}
+        menu_title={"Ementa"}
         menu_sub_title={"Veja o Nosso Delicioso Menu"}
         menu_all={"Todas"}
         menu_menu={"Ementa"}

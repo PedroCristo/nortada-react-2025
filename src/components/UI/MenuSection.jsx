@@ -44,13 +44,12 @@ function MenuSection({
           <h1>{menu_title}</h1>
           <p>{menu_sub_title}</p>
         </div>
-
         <div className="row" data-aos="fade-up" data-aos-delay="100">
           <div className="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters" className="list-unstyled d-flex">
               <li
                 onClick={() => setFilter("*")}
-                className={`filter-active mx-2 ${
+                className={`filter-active mx-2 btn ${
                   filter === "*" ? "filter-active" : ""
                 }`}
               >
@@ -58,13 +57,13 @@ function MenuSection({
               </li>
               <li
                 onClick={() => setFilter("menu")}
-                className={`mx-2 ${filter === "menu" ? "filter-active" : ""}`}
+                className={`mx-2 btn ${filter === "menu" ? "filter-active" : ""}`}
               >
                 {menu_menu}
               </li>
               <li
                 onClick={() => setFilter("desserts")}
-                className={`mx-2 ${
+                className={`mx-2 btn ${
                   filter === "desserts" ? "filter-active" : ""
                 }`}
               >
@@ -72,7 +71,7 @@ function MenuSection({
               </li>
               <li
                 onClick={() => setFilter("wines")}
-                className={`mx-2 ${filter === "wines" ? "filter-active" : ""}`}
+                className={`mx-2 btn ${filter === "wines" ? "filter-active" : ""}`}
               >
                 {menu_wines}
               </li>

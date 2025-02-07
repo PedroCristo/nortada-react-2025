@@ -724,6 +724,11 @@ section {
   list-style: none;
   text-align: center;
   border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .menu #menu-flters li {
@@ -819,6 +824,16 @@ section {
   margin-bottom: -15px;
   font-size: 1.8rem;
   padding-left: 50px;
+}
+
+.menu .btn {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: transparent !important;
+  cursor: pointer;
+  width: 120px !important;
+  font-size: 1rem !important;
 }
 
 
