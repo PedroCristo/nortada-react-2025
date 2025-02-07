@@ -9,6 +9,7 @@ const FormDataPt = [
       form_message: "Mensagem",
       form_sent_menssage: "A sua mensagem foi enviada com sucesso. Obrigado!",
       form_btn: "Enviar",
+      recaptcha_lang: "pt",
     },
   ];
   

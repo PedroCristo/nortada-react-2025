@@ -10,6 +10,7 @@ function FormSection({
   form_message,
   form_sent_menssage,
   form_btn,
+  recaptcha_lang
 }) {
   const [isRecaptchaChecked, setIsRecaptchaChecked] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
@@ -30,12 +31,13 @@ function FormSection({
 
   return (
     <form
-      action=""
+      action="https://formsubmit.co/rnortada@sapo.pt"
       method="post"
       role="form"
       className="email-form"
       onSubmit={handleSubmit}
     >
+     <input type="hidden" name="_next" value="https://restaurantenortada.com/"></input>
       <div className="row">
         <div className="col-md-6 form-group">
           <input type="hidden" name="_captcha" value="false" />
@@ -92,7 +94,7 @@ function FormSection({
         // sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
         sitekey={"6Lfsr84qAAAAAFtyUbI1a8jXj7YOaxzZ6NQVZdL8"}
         onChange={handleRecaptchaChange}
-        hl={"pt"}
+        hl={recaptcha_lang}
       />
       {alertMessage && (
         <h6 className="alert alert-danger mt-3">{alertMessage}</h6>
@@ -112,6 +114,7 @@ FormSection.propTypes = {
   form_message: PropTypes.string.isRequired,
   form_sent_menssage: PropTypes.string.isRequired,
   form_btn: PropTypes.string.isRequired,
+  recaptcha_lang: PropTypes.string.isRequired,
 };
 
 export default FormSection;

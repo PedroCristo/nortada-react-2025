@@ -9,7 +9,7 @@ function BannerSection({ banner_title, banner_content, banner_bg }) {
       <div className="row">
         <div className="col-md-12" data-aos="fade-up">
           <h3 className="title-brand interactive-color">{banner_title}</h3>
-          <p>{banner_content}</p>
+          <p className="fst-italic">{banner_content}</p>
         </div>
       </div>
     </div>

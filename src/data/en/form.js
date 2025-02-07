@@ -8,6 +8,7 @@ const FormDataEn = [
       form_message: "Message",
       form_sent_menssage: "Your message has been successfully sent. Thank you!",
       form_btn: "Send",
+      recaptcha_lang: "en",
     },
   ];
   

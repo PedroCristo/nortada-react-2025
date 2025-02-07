@@ -80,6 +80,7 @@ function ContactSection({
                   form_message={item.form_message}
                   form_sent_menssage={item.form_sent_menssage}
                   form_btn={item.form_btn}
+                   recaptcha_lang={item.recaptcha_lang}
                 />
               ))
             ) : (
