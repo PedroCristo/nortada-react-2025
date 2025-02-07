@@ -17,7 +17,10 @@ function HeaderPt() {
       <Header 
         HeaderNavDataPt={HeaderNavDataPt} 
         initialVisibility={showChristmasMessage}
-        christmasData={christmasData}  // Passa os dados da mensagem traduzida
+        christmasData={christmasData} // Passa os dados da mensagem traduzida
+        langUrl={"/home-en"}  
+        lang1={"PT"}  
+        lang2={"EN"} 
       />
     </div>
   );

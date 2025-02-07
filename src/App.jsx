@@ -1,6 +1,5 @@
 import { useEffect } from "react"; // Import useEffect from React
 import { Routes, Route } from "react-router-dom";
-import "./js/main.js"; // Your custom JS file
 import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap CSS
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Bootstrap JS
 import 'bootstrap-icons/font/bootstrap-icons.css'; // Bootstrap Icons
