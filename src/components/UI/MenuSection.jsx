@@ -13,6 +13,7 @@ function MenuSection({
   useFetchData,
 }) {
   const [filter, setFilter] = useState("*");
+  const [title, setTitle] = useState(menu_title);
   const { csvData, loading, error } = useFetchCSVData(useFetchData);
 
   if (loading)
@@ -37,40 +38,42 @@ function MenuSection({
     return acc;
   }, {});
 
+  // Função para mudar o filtro e o título do menu
+  const handleFilterChange = (newFilter, newTitle) => {
+    setFilter(newFilter);
+    setTitle(newTitle);
+  };
+
   return (
     <section id="menu" className="menu section-bg">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
-          <h1>{menu_title}</h1>
+          <h1>{title}</h1>
           <p>{menu_sub_title}</p>
         </div>
         <div className="row" data-aos="fade-up" data-aos-delay="100">
           <div className="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters" className="list-unstyled d-flex">
               <li
-                onClick={() => setFilter("*")}
-                className={`filter-active mx-2 btn ${
-                  filter === "*" ? "filter-active" : ""
-                }`}
+                onClick={() => handleFilterChange("*", menu_all)}
+                className={`mx-2 btn ${filter === "*" ? "filter-active" : ""}`}
               >
                 {menu_all}
               </li>
               <li
-                onClick={() => setFilter("menu")}
+                onClick={() => handleFilterChange("menu", menu_menu)}
                 className={`mx-2 btn ${filter === "menu" ? "filter-active" : ""}`}
               >
                 {menu_menu}
               </li>
               <li
-                onClick={() => setFilter("desserts")}
-                className={`mx-2 btn ${
-                  filter === "desserts" ? "filter-active" : ""
-                }`}
+                onClick={() => handleFilterChange("desserts", menu_desserts)}
+                className={`mx-2 btn ${filter === "desserts" ? "filter-active" : ""}`}
               >
                 {menu_desserts}
               </li>
               <li
-                onClick={() => setFilter("wines")}
+                onClick={() => handleFilterChange("wines", menu_wines)}
                 className={`mx-2 btn ${filter === "wines" ? "filter-active" : ""}`}
               >
                 {menu_wines}
@@ -123,6 +126,8 @@ function MenuSection({
     </section>
   );
 }
+
+
 
 // **Define PropTypes**
 MenuSection.propTypes = {
