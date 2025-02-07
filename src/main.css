@@ -375,6 +375,10 @@ section {
   width: 250px !important;
 }
 
+.languages-mobile {
+  display: none !important;
+}
+
 /*******************************
 *          HERO SECTION        *
 *******************************/
@@ -761,6 +765,7 @@ section {
   display: flex;
   justify-content: space-between;
   position: relative;
+  text-align: center;
 }
 
 .menu .menu-content::after {
@@ -773,6 +778,10 @@ section {
   top: -4px;
   z-index: 1;
   color: #bab3a6;
+}
+
+.price {
+  display: none;
 }
 
 .menu .menu-content a {
@@ -799,15 +808,15 @@ section {
 }
 
 .menu .menu-ingredients {
-  margin-left: 85px;
+  margin-left: 95px;
   font-style: italic;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
 }
 
 #menu h2 {
-  margin-top: 85px;
-  margin-bottom: -25px;
+  margin-top: 65px;
+  margin-bottom: -15px;
   font-size: 1.8rem;
   padding-left: 50px;
 }

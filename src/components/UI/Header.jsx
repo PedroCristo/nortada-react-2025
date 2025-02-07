@@ -56,8 +56,8 @@ function Header({ HeaderNavDataPt, initialVisibility, christmasData, lang1, lang
                 </li>
               ))}
               <li className="languages d-flex align-items-center">
-                <span className="interactive-color">{lang1} / </span>
-                <span><Link to={langUrl}>{lang2}</Link>
+                <span className="interactive-color languages-mobile">{lang1} / </span>
+                <span><Link className="languages-mobile" to={langUrl}>{lang2}</Link>
                 </span>
               </li>
               <img
