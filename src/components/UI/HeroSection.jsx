@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function HeroSection({
   title,
@@ -23,18 +24,18 @@ function HeroSection({
             <h2>{sub_title}</h2>
 
             <div className="btns">
-              <a
-                href={btn_menu_link}
+              <Link
+                to={btn_menu_link}
                 className="btn-menu animated fadeInUp scrollto"
               >
                 {btn_menu}
-              </a>
-              <a
-                href="tel:+351 21 929 1516"
+              </Link>
+              <Link
+                to="tel:+351 21 929 1516"
                 className="btn-book animated fadeInUp scrollto"
               >
                 {btn_booking}
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-4">
