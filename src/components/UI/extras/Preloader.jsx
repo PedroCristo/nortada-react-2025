@@ -5,7 +5,9 @@ function Preloader() {
     const preloader = document.querySelector("#preloader");
 
     const removePreloader = () => {
-      preloader?.remove();
+      setTimeout(() => {
+        preloader?.remove();
+      }, 2000); // Delay of 2 seconds (2000ms) before removing the preloader
     };
 
     window.addEventListener("load", removePreloader);

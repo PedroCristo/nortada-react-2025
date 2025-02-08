@@ -170,6 +170,14 @@
         font-size: 1.4rem;
     }
 
+    #header .logo img {
+        width: 200px;
+    }
+
+    #preloader .w-25 {
+        width: 50% !important;
+    }
+
 }
 
 @media only screen and (max-width: 555px) {
