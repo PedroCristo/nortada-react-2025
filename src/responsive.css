@@ -264,6 +264,7 @@
     .contact-info .bi:nth-child(1) {
         margin-left: -5px !important;
     }
+
     .contact-info .bi:nth-child(2) {
         margin-top: 1px !important;
     }
@@ -287,6 +288,7 @@
     .navbar-mobile .bi-x.active {
         top: 90px;
 
+    }
 }
 
 @media only screen and (max-width: 405px) {
