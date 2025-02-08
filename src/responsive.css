@@ -283,6 +283,10 @@
     #header {
         top: 60px;
     }
+
+    .navbar-mobile .bi-x.active {
+        top: 90px;
+
 }
 
 @media only screen and (max-width: 405px) {
