@@ -10,7 +10,7 @@ function MenuEn() {
         <div>
             <TopBarEn />
             <HeaderEn />
-            <HeaderMenu menu_title={"Menu"} />
+            <HeaderMenu menu_title={""} />
             <MenuSectionEn />
             <FooterEn />
             <CookiesAlertEn />

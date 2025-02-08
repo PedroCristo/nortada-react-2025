@@ -10,7 +10,7 @@ function MenuPt() {
     <div>
       <TopBarPt />
       <HeaderPt />
-      <HeaderMenu menu_title={"Ementa"} />
+      <HeaderMenu menu_title={""} />
       <MenuSectionPt />
       <Footer_Pt />
       <CookiesAlertPt />

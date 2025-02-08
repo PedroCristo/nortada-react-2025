@@ -187,6 +187,12 @@
         justify-content: center !important;
         align-items: center !important;
     }
+
+    #header-menu {
+        height: 25vh !important;
+        background-position: 0 -50px;
+      }
+      
 }
 
 @media only screen and (max-width: 500px) {
@@ -259,10 +265,11 @@
     .contact-info .bi {
         margin-bottom: 5px !important;
         margin-top: 5px !important;
+        width: 250px;
     }
 
     .contact-info .bi:nth-child(1) {
-        margin-left: -5px !important;
+        margin-left: 20px !important;
     }
 
     .contact-info .bi:nth-child(2) {

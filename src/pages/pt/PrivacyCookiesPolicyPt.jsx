@@ -10,7 +10,7 @@ function PrivacyCokkiesPolicyPt() {
     <div>
       <TopBarPt />
       <HeaderPt />
-      <HeaderMenu menu_title={"Política de Privacidade e Cookies"}/>
+      <HeaderMenu menu_title={""}/>
       <PrivacyCokiesPolicyPt />
       <Footer_Pt />
       <CookiesAlertPt />
