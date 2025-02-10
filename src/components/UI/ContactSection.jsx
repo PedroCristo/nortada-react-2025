@@ -80,11 +80,12 @@ function ContactSection({
                   form_message={item.form_message}
                   form_sent_menssage={item.form_sent_menssage}
                   form_btn={item.form_btn}
+                  recaptcha_lang={item.recaptcha_lang}
                 />
               ))
             ) : (
               <div className="d-flex justify-content-center align-items-center">
-                  <p className="p-5 mt-5">{form_error}</p>
+                <p className="p-5 mt-5">{form_error}</p>
               </div>
             )}
           </div>
@@ -118,6 +119,7 @@ ContactSection.propTypes = {
       form_message: PropTypes.string.isRequired,
       form_sent_menssage: PropTypes.string.isRequired,
       form_btn: PropTypes.string.isRequired,
+      recaptcha_lang: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

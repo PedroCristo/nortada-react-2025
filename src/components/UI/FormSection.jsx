@@ -107,14 +107,14 @@ function FormSection({
 
 // PropTypes for validation
 FormSection.propTypes = {
-  recaptcha_menssage: PropTypes.string.isRequired,
   form_name: PropTypes.string.isRequired,
   form_email: PropTypes.string.isRequired,
   form_subject: PropTypes.string.isRequired,
   form_message: PropTypes.string.isRequired,
   form_sent_menssage: PropTypes.string.isRequired,
   form_btn: PropTypes.string.isRequired,
-  recaptcha_lang: PropTypes.string.isRequired,
+  recaptcha_menssage: PropTypes.string.isRequired,
+  recaptcha_lang: PropTypes.string.isRequired
 };
 
 export default FormSection;
