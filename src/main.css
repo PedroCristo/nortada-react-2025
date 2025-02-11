@@ -385,7 +385,7 @@ section {
 *******************************/
 
 #hero {
-  background: url("/images/desktop/nortada_1.jpg") center center;
+  background: url(/images/desktop/nortada_1.jpg) center center;
   height: 100vh;
 }
 
@@ -638,14 +638,14 @@ section {
 *******************************/
 
 .banner-bg-1 {
-  background-image: url(../public/images/desktop/nortada_6.jpg);
+  background-image: url(../images/desktop/nortada_6.jpg);
   height: 350px;
   z-index: 100;
   text-align: center !important;
 }
 
 .banner-bg-2 {
-  background-image: url(../public/images/desktop/nortada_13.jpg);
+  background-image: url(../images/desktop/nortada_13.jpg);
   height: 350px;
   z-index: 100;
   text-align: center !important;
@@ -1109,7 +1109,7 @@ section {
 *******************************/
 
 #header-menu {
-  background-image: url(../public/images/extras/nortada_16.jpg);
+  background-image: url(../images/extras/nortada_16.jpg);
   height: 35vh;
   background-position: 0 -120px;
   z-index: 100;
@@ -1131,7 +1131,7 @@ section {
 *           404 PAGE           *
 *******************************/
 .page404 {
-  background-image: url(../public/images/desktop/gallery/nortada_10.jpg);
+  background-image: url(../images/desktop/gallery/nortada_10.jpg);
   height: 100vh;
   position: relative;
   display: flex;
@@ -1190,8 +1190,15 @@ section {
 
 .page404 .btn {
   margin-right: 25px;
+  background-color: transparent !important;
+  color: var(--white--color);
+  text-transform: uppercase;
 }
 
+.bi-arrow-left  {
+  margin-right: 10px !important;
+
+}
 
 /*******************************
 *        COOKIES BOX           *
@@ -1286,7 +1293,7 @@ section {
 *       CHRISTMAS ALERT       *
 *******************************/
 #ChristmasMessage {
-  background-image: url(../public/images/extras/christmas_card_gif.gif);
+  background-image: url(../images/extras/christmas_card_gif.gif);
   height: 18vh;
   width: 90%;
   position: absolute;
