@@ -8,14 +8,14 @@ const PageNotFound = () => {
           <h1 className="title">404</h1>
           <div className="content-item">
             <img
-              src="../public/images/extras/flags/pt-flag.jpg"
+              src="../images/extras/flags/pt-flag.jpg"
               alt="Flag Image"
             />
             <h2>Página Não Encontrada</h2>
           </div>
           <div className="content-item">
             <img
-              src="../public/images/extras/flags/gb-flag.png"
+              src="../images/extras/flags/gb-flag.png"
               alt="Flag Image"
             />
             <h2>Page Not Foud</h2>
