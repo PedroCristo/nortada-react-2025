@@ -22,6 +22,7 @@ function Preloader() {
           src="/images/extras/nortada_logo_no_bg.png"
           alt="Nortada Logo"
           className="preloader-logo"
+          
         />
       </div>
     </div>
