@@ -14,6 +14,7 @@ function ContactSectionPt() {
           location={item.location}
           openHours_title={item.openHours_title}
           openHours={item.openHours}
+          openHoursMonday={item.openHoursMonday}
           email_title={item.email_title}
           email={item.email}
           phone_title={item.phone_title}

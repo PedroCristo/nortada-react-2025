@@ -18,6 +18,7 @@ function TopBarPt() {
           key={item.id}
           phone_number={item.phone_number}
           time_shedule={item.time_shedule}
+          time_shedule_monday={item.time_shedule_monday}
           lang1="PT" 
           lang2="EN" 
           langUrl="/home-en" 

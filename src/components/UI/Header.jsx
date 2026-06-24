@@ -19,7 +19,7 @@ function Header({ HeaderNavDataPt, initialVisibility, christmasData, lang1, lang
 
   return (
     <div className="header-box">
-      <header id="header" className="fixed-top d-flex align-items-center">
+      <header id="header" className="fixed-top d-flex align-items-center mt-4">
         <div className="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
           <a href="/" className="logo me-auto me-lg-0">
             <img

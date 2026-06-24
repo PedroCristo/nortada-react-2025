@@ -1,33 +1,29 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 function Preloader() {
+  const [visible, setVisible] = useState(true);
+
   useEffect(() => {
-    const preloader = document.querySelector("#preloader");
+    const timer = setTimeout(() => {
+      setVisible(false);
+    }, 5000);
 
-    const removePreloader = () => {
-      setTimeout(() => {
-        preloader?.remove();
-      }, 2000); // Delay of 2 seconds (2000ms) before removing the preloader
-    };
-
-    window.addEventListener("load", removePreloader);
-
-    // Cleanup listener on component unmount
-    return () => {
-      window.removeEventListener("load", removePreloader);
-    };
+    return () => clearTimeout(timer);
   }, []);
 
+  if (!visible) return null;
+
   return (
-    <div
-      id="preloader"
-      className="d-flex justify-content-center align-items-center"
-    >
-      <img
-        src="/images/extras/nortada_logo_no_bg.png"
-        alt="Nortada Logo"
-        className="img-fluid w-25"
-      />
+    <div id="preloader">
+      <div className="preloader-wrapper">
+        <div className="spinner"></div>
+
+        <img
+          src="/images/extras/nortada_logo_no_bg.png"
+          alt="Nortada Logo"
+          className="preloader-logo"
+        />
+      </div>
     </div>
   );
 }

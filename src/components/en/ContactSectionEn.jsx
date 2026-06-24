@@ -13,6 +13,7 @@ function ContactSectionEn() {
           location_title={item.location_title}
           location={item.location}
           openHours_title={item.openHours_title}
+          openHoursMonday={item.openHoursMonday}
           openHours={item.openHours}
           email_title={item.email_title}
           email={item.email}
@@ -21,8 +22,8 @@ function ContactSectionEn() {
           phone_note={item.phone_note}
           form_error={item.form_error}
           FormData={FormDataEn}
-          />
-        ))}
+        />
+      ))}
     </div>
   );
 }
