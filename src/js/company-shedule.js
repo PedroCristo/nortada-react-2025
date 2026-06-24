@@ -9,33 +9,46 @@ export default function companySchedule(scheduleMessages) {
 
   useEffect(() => {
     const dt = new Date();
-    const th = dt.getHours() + dt.getMinutes() / 60; // Get precise time
-    const td = dt.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+    const th = dt.getHours() + dt.getMinutes() / 60;
+    const td = dt.getDay(); // 0 Sun ... 6 Sat
 
     let message = "";
     let color = "";
+    let isOpen = false;
 
-    if (td === 2) { // Tuesday (Terça-feira)
+    // Tuesday closed
+    if (td === 2) {
       message = scheduleMessages.tuesdayClosed;
       color = "#CE3333";
-    } else if (td === 3 || td === 4 || td === 5 || td === 6 || td === 0 || td === 1) { 
-      // Open Wednesday to Monday from 12:00 to 22:30
-      if (th >= 12 && th < 22.5) {
+      isOpen = false;
+
+    // Monday: 12:00 - 15:00
+    } else if (td === 1) {
+      if (th >= 12 && th < 15) {
+        isOpen = true;
         message = scheduleMessages.open;
         color = "#15EB07";
       } else {
+        isOpen = false;
         message = scheduleMessages.closed;
-        color = " #f70000";
+        color = "#f70000";
+      }
+
+    // Wednesday - Sunday: 12:00 - 22:30
+    } else {
+      if (th >= 12 && th < 22.5) {
+        isOpen = true;
+        message = scheduleMessages.open;
+        color = "#15EB07";
+      } else {
+        isOpen = false;
+        message = scheduleMessages.closed;
+        color = "#f70000";
       }
     }
 
-    setSchedule({
-      isOpen: th >= 12 && th < 22.5 && td !== 2, // Open if within hours and not Tuesday
-      message,
-      color,
-    });
+    setSchedule({ isOpen, message, color });
   }, [scheduleMessages]);
 
   return schedule;
 }
-

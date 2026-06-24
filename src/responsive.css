@@ -65,14 +65,12 @@
 
 @media only screen and (max-width:900px) {
     #header {
-        margin-top: -10px !important;
+        margin-top: -1px !important;
     }
 
     #header.header-scrolled {
         top: 0 !important;
-
     }
-
 }
 
 @media only screen and (max-width: 850px) {
@@ -85,7 +83,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
     #banner p {

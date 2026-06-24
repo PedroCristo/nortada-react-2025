@@ -297,7 +297,10 @@ section {
 
 #header.header-scrolled .navbar a {
   color: var(--black-color) !important;
+}
 
+#header.header-scrolled .bi-x {
+  top: 25px;
 }
 
 #header .logo img {
@@ -361,15 +364,11 @@ section {
 .mobile-nav-toggle,
 .navbar-mobile .bi-x {
   color: var(--interactive-color) !important;
-  font-size: 28px;
+  font-size: 55px;
   cursor: pointer;
   display: none;
   line-height: 0;
   transition: 0.5s;
-}
-
-.navbar-mobile .bi-x.active {
-  /* margin-top: -60px !important; */
 }
 
 .mobile-nav-toggle.active {
@@ -772,6 +771,7 @@ section {
 .menu #menu-flters li:hover,
 .menu #menu-flters li.filter-active {
   color: var(--interactive-color) !important;
+  border: 1px solid var(--grey-color) !important;
 }
 
 .menu #menu-flters li:last-child {
@@ -1186,9 +1186,7 @@ section {
 .page404 h2 {
   color: var(--interactive-color) !important;
   z-index: 10000;
-
 }
-
 
 .page404:before {
   content: "";
