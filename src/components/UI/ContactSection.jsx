@@ -18,7 +18,7 @@ function ContactSection({
   FormData, // Accept FormData as a prop
 }) {
   return (
-      <section id="contact" className="contact set-bg">
+      <section id="contact" className="contact set-b mt-5">
         <div className="container" data-aos="fade-up">
           <div className="section-title">
             <h2>{section_title}</h2>
