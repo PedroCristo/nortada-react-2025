@@ -1169,15 +1169,22 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white-color);
+  color: var(--white-color) !important;
   padding: 25px;
   z-index: 1000;
+}
+
+.page404 .title,
+.page404  h2 {
+  color: var(--interactive-color) !important;
+  z-index: 10000;
+
 }
 
 
 .page404:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.4);
   position: absolute;
   bottom: 0;
   top: 0;

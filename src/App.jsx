@@ -36,10 +36,10 @@ function App() {
     <>
       <Routes>
         <Route path="/" exact element={<HomePt />} />
-        <Route path="menu-pt" exact element={<MenuPt />} />
-        <Route path="política-de-privacidade-e-cookies" exact element={<PrivacyCokkiesPolicyPt />} />
-        <Route path="home-en" exact element={<HomeEn />} />
-        <Route path="menu-en" exact element={<MenuEn />} />
+        <Route path="/menu-pt" exact element={<MenuPt />} />
+        <Route path="/política-de-privacidade-e-cookies" exact element={<PrivacyCokkiesPolicyPt />} />
+        <Route path="/home-en" exact element={<HomeEn />} />
+        <Route path="/menu-en" exact element={<MenuEn />} />
         <Route path="privacy-policy-cookies" exact element={<PrivacyCokkiesPolicyEn />} />
         <Route path="*" exact element={<PageNotFound />} />
       </Routes>
