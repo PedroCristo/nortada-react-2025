@@ -364,7 +364,7 @@ section {
 .mobile-nav-toggle,
 .navbar-mobile .bi-x {
   color: var(--interactive-color) !important;
-  font-size: 55px;
+  font-size: 35px;
   cursor: pointer;
   display: none;
   line-height: 0;
