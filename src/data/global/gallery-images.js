@@ -28,8 +28,8 @@ const galleryDataImages = [
     },
     {
         id: 6,
-        image_url_desktop: "/images/mobile/gallery/nortada_esplananada_9-16_1.jpg",
-        image_url_tablet: "/images/mobile/gallery/nortada_esplananada_9-16_1.jpg",
+        image_url_desktop: "/images/mobile/gallery/nortada_sala_9-16_4.jpg",
+        image_url_tablet: "/images/mobile/gallery/nortada_sala_9-16_4.jpg",
     },
     // {
     //     id: 7,
