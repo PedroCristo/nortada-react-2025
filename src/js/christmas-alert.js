@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export function useChristmasMessage(christmasMessages = {}) {
-  const { 
+  const {
     christmasGreeting = "Desejamos a todos os nossos clientes e colaboradores um Feliz Natal e um próspero Ano Novo",
     newYearGreeting = "Desejamos a todos os nossos clientes e colaboradores um próspero Ano Novo"
   } = christmasMessages;
@@ -24,12 +24,16 @@ export function useChristmasMessage(christmasMessages = {}) {
     let position = "absolute";
     let width = "0";
 
-    if ((tm === 11 && tda >= 5) || (tm === 0 && tda <= 10)) {
-      displayMessage =
-        tm === 11
-          ? `${christmasGreeting} de ${currentYear + 1}`
-          : `${newYearGreeting} de ${currentYear}`;
-
+    if (tm === 11 && tda >= 5) {
+      // 5 December → 31 December
+      displayMessage = `${christmasGreeting} de ${currentYear + 1}`;
+      displayStyle = "block";
+      opacity = "1";
+      position = "absolute";
+      width = "90%";
+    } else if (tm === 0 && tda >= 1 && tda <= 10) {
+      // 1 January → 10 January
+      displayMessage = `${newYearGreeting} de ${currentYear}`;
       displayStyle = "block";
       opacity = "1";
       position = "absolute";

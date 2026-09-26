@@ -22,7 +22,7 @@ function ChristmasMessage({  message, opacityStyle, positionStyle, widthStyle })
     >
         <div className="title-box">
           <i className="bi bi-x-lg text-danger mb-5" style={{opacity: opacityStyle,}} onClick={hideChristmasMessage}></i>
-          <h4>{message}</h4>
+          <h4 className="text-white">{message}</h4>
         </div>
     </div>
   );
