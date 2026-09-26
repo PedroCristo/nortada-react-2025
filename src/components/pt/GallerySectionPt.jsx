@@ -4,7 +4,7 @@ function GallerySectionPt() {
     return (
       <GallerySection
          gallery_title={"Galeria"}
-         gallery_sub_title={"Algumas fotos do nosso restaurante"}
+         gallery_sub_title={"Conheça o nosso restaurante"}
        />
     )
    

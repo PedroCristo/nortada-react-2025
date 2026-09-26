@@ -1,8 +1,8 @@
 const HeroSectionDataEn = [
     {
         id: 1,
-        title: "Restaurante Nortada",
-        sub_title: "Fresh taste with a sea view, since 1979",
+        title: "NORTADA RESTAURANT",
+        sub_title: "PRAIA GRANDE - SINTRA",
         btn_menu_link: "/menu-en",
         btn_menu: "Our Menu",
         btn_booking_link: "",

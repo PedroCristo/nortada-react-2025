@@ -4,7 +4,7 @@ function GallerySectionEn() {
     return (
       <GallerySection
          gallery_title={"Gallery"}
-         gallery_sub_title={"Some photos of our restaurant!"}
+         gallery_sub_title={"Discover our restaurant"}
        />
     )
    

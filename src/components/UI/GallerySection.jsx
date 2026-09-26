@@ -19,11 +19,11 @@ function GallerySection({ gallery_title, gallery_sub_title }) {
         </div>
       </div>
 
-      <div className="container-fluid" data-aos="fade-up" data-aos-delay="100">
-        <div className="row g-0">
+      <div className="container" data-aos="fade-up" data-aos-delay="100">
+        <div className="row g-6">
           {galleryDataImages.map((item, index) => (
-            <div key={index} className="col-lg-3 col-md-4">
-              <div className="gallery-item">
+            <div key={index} className="col-lg-4 col-md-4">
+              <div className="gallery-item mb-4">
                 <a
                   href={item.image_url_desktop} // Full-size image for the lightbox
                   className="gallery-lightbox"

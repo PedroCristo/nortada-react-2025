@@ -37,7 +37,7 @@ function Header({
   return (
     <div className="header-box">
       <header id="header" className="fixed-top d-flex align-items-center mt-4">
-        <div className="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+        <div className="container-fluid container-xxl d-flex align-items-center justify-content-lg-between">
           <a href="/" className="logo me-auto me-lg-0">
             <img
               src="/images/extras/nortada_logo_no_bg.png"
@@ -51,10 +51,7 @@ function Header({
             className="navbar order-last order-lg-0 navbar-mobile"
           >
             <ul className={menuOpen ? "active" : ""}>
-              <i
-                className="bi bi-x mobile-nav-toggle"
-                onClick={toggleMenu}
-              ></i>
+              <i className="bi bi-x mobile-nav-toggle" onClick={toggleMenu}></i>
 
               <i
                 className={`bi ${
@@ -72,9 +69,7 @@ function Header({
                       toggleMenu();
                     }}
                     className={`nav-link scrollto ${
-                      activeLink === item.navLink
-                        ? "nav-active active"
-                        : ""
+                      activeLink === item.navLink ? "nav-active active" : ""
                     }`}
                   >
                     {item.navName}
@@ -93,6 +88,14 @@ function Header({
                   </Link>
                 </span>
               </li>
+              <div className="languages d-none d-md-flex align-items-center">
+                <ul>
+                  {/* <li>{lang1}</li> */}
+                  <li>
+                    <Link to={langUrl}>{lang2}</Link>
+                  </li>
+                </ul>
+              </div>
 
               <img
                 src="/images/extras/nortada_logo_no_bg.png"

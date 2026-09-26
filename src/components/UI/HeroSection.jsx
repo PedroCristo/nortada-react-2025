@@ -34,12 +34,12 @@ function HeroSection({
       />
 
       <div
-        className="container position-relative text-center text-lg-start"
+        className="container position-relative text-center"
         data-aos="zoom-in"
         data-aos-delay="100"
       >
         <div className="row">
-          <div className="col-lg-8">
+          <div className="col-lg-12">
             <h1 className="mb-2">
               <span className="title-brand">{title}</span>
             </h1>
@@ -58,11 +58,11 @@ function HeroSection({
           </div>
 
           <div className="col-lg-4">
-            <img
+            {/* <img
               className="hero-img"
               src="/images/extras/guia_michelin.png"
               alt="Michelin Guide"
-            />
+            /> */}
           </div>
         </div>
       </div>

@@ -1,9 +1,6 @@
 /*******************************
 *        GOOGLE FONTS          *
 *******************************/
-/* NUNITO */
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-
 /* MAECELLUS */
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
@@ -27,7 +24,7 @@
 }
 
 body {
-  font-family: "Nunito Sans", serif;
+  font-family: "Marcellus", serif !important;
   background: var(--white--color) !important;
   color: var(--white--color);
 }
@@ -61,7 +58,7 @@ p {
 }
 
 .title-brand {
-  font-family: "Marcellus", serif;
+  /* font-family: "Marcellus", serif; */
   font-weight: 900;
   letter-spacing: 2px;
   font-style: normal;
@@ -106,14 +103,13 @@ section {
 }
 
 .section-title h2 {
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 900;
   padding: 0;
   line-height: 1px;
   margin: 0 0 10px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
 }
 
 .section-title h2::after {
@@ -128,7 +124,7 @@ section {
 .section-title p {
   margin: 0;
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--interactive-color) !important;
 }
@@ -411,7 +407,7 @@ section {
   position: absolute;
   inset: -10% 0;
 
-  background-image: url("/images/mobile/gallery/nortada_sala_16-9_5_upscayl_5x_upscayl-standard-4x.png");
+  background-image: url("/images/desktop/nortada-img-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -439,7 +435,7 @@ section {
 }
 
 #hero h1 span {
-  color: var(--interactive-color);
+  color: var(--white--color) !important;
 }
 
 #hero h2 {
@@ -460,7 +456,6 @@ section {
   text-transform: uppercase;
   display: inline-block;
   padding: 12px 30px;
-  border-radius: 50px;
   transition: 0.3s;
   line-height: 1;
   color: var(--white--color);
@@ -779,7 +774,7 @@ section {
 }
 
 .menu .menu-item {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .menu .menu-img {
@@ -790,7 +785,7 @@ section {
 }
 
 .menu .menu-content {
-  margin-left: 85px;
+  margin-left: 50px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -799,9 +794,9 @@ section {
 }
 
 .menu .menu-content::after {
-  content: "......................................................................"
+  /* content: "......................................................................"
     "...................................................................."
-    "....................................................................";
+    "...................................................................."; */
   position: absolute;
   left: 20px;
   right: 0;
@@ -838,15 +833,14 @@ section {
 }
 
 .menu .menu-ingredients {
-  margin-left: 95px;
+  margin-left: 60px;
   font-style: italic;
   font-size: 14px;
   color: var(--grey-color) !important;
 }
 
-#menu h2 {
-  margin-top: 65px;
-  margin-bottom: -15px;
+#menu .menu-category {
+  margin-top: 85px;
   font-size: 1.8rem;
   padding-left: 50px;
 }
@@ -888,8 +882,6 @@ section {
 *******************************/
 .gallery .gallery-item {
   overflow: hidden;
-  border-right: 3px solid #454035;
-  border-bottom: 3px solid #454035;
 }
 
 .gallery .gallery-item img {
@@ -912,6 +904,10 @@ section {
     url("/images/desktop/gallery/nortada_9.jpg") center center;
 }
 
+.contact .section-title h2 {
+  color: var(--white--color) !important;
+}
+
 .contact .info {
   width: 100%;
   color: var(--white--color) !important;
@@ -922,7 +918,6 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: var(--interactive-color) !important;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -15,12 +15,9 @@ function TopBar({
       <div className="container d-flex justify-content-center justify-content-md-between">
         <div className="contact-info d-flex align-items-center">
           <div className="show-desktop">
-          <i className="bi bi-phone d-flex align-items-center">
-            <span>{phone_number}</span>
-          </i>
-
+     
           </div>
-          <i className="bi bi-clock d-flex align-items-center ms-4">
+          <i className="bi bi-clock d-flex align-items-center">
             <span>{time_shedule}</span>
           </i>
           <i className="bi bi-clock d-flex align-items-center ms-4">
@@ -33,14 +30,6 @@ function TopBar({
             {dynamically_schedule.message}
           </div>
           <div></div>
-        </div>
-        <div className="languages d-none d-md-flex align-items-center">
-          <ul>
-            <li>{lang1}</li>
-            <li>
-              <Link to={langUrl}>{lang2}</Link>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

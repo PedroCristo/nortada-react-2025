@@ -63,6 +63,12 @@
     }
 }
 
+@media only screen and (max-width:992px) {
+    #menu .menu-category {
+        padding-left: 10px;
+    }
+}
+
 @media only screen and (max-width:900px) {
     #header {
         margin-top: -1px !important;
@@ -171,6 +177,36 @@
     #hero h2 {
         font-size: 18px;
         line-height: 24px;
+    }
+
+    /* MENU SECTION */
+    #menu .menu-container {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #menu .menu-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu .section-title-top {
+        text-align: center;
+        padding-left: initial !important;
+    }
+
+    #menu .section-title {
+        text-align: center;
+    }
+
+
+    #menu .menu-category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 

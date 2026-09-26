@@ -47,7 +47,7 @@ function MenuSection({
   return (
     <section id="menu" className="menu section-bg">
       <div className="container" data-aos="fade-up">
-        <div className="section-title">
+        <div className="section-title section-title-top">
           <h1>{title}</h1>
           <p>{menu_sub_title}</p>
         </div>
@@ -101,17 +101,17 @@ function MenuSection({
             return (
               <div key={index}>
                 <div className="section-title">
-                  <h2>{subCategory}</h2>
+                  <h2 className="menu-category mb-1">{subCategory}</h2>
                 </div>
 
                 <div className="row">
                   {filteredItems.map((item, idx) => (
                     <div
                       key={idx}
-                      className={`col-lg-6 menu-item ${item.category}`}
+                      className={`col-lg-6 col-md-6 col-sm-12 menu-item ${item.category}`}
                     >
                       <div className="menu-content">
-                        <span>{item.name}</span>
+                        <span className="menu-item-name">{item.name}</span>
                         <span className="price">{item.price}</span>
                       </div>
                       <div className="menu-ingredients">{item.description}</div>

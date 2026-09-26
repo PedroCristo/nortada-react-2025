@@ -21,7 +21,7 @@ function HomePt() {
       <BannerPt_1 />
       <GallerySectionPt />
       <PressSectionPt />
-      <BannerPt_2 />
+      {/* <BannerPt_2 /> */}
       <ContactSectionPt />
       <Footer_Pt />
       <CookiesAlertPt />

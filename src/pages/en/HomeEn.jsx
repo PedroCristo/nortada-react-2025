@@ -21,7 +21,7 @@ function HomeEn() {
             <BannerEn_1 />
             <GallerySectionEn />
             <PressSectionEn />
-            <BannerEn_2 />
+            {/* <BannerEn_2 /> */}
             <ContactSectionEn />
             <FooterEn />
             <CookiesAlertEn />
