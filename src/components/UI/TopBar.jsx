@@ -5,18 +5,13 @@ function TopBar({
   time_shedule,
   time_shedule_monday,
   dynamically_schedule,
-  lang1,
-  lang2,
-  langUrl,
   phone_number,
 }) {
   return (
     <div id="topbar" className="d-flex align-items-center fixed-top">
       <div className="container d-flex justify-content-center justify-content-md-between">
         <div className="contact-info d-flex align-items-center">
-          <div className="show-desktop">
-     
-          </div>
+          <div className="show-desktop"></div>
           <i className="bi bi-clock d-flex align-items-center">
             <span>{time_shedule}</span>
           </i>

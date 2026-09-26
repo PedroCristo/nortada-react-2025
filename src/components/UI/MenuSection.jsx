@@ -54,12 +54,12 @@ function MenuSection({
         <div className="row" data-aos="fade-up" data-aos-delay="100">
           <div className="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters" className="list-unstyled d-flex">
-              <li
+              {/* <li
                 onClick={() => handleFilterChange("*", menu_all)}
                 className={`mx-2 btn ${filter === "*" ? "filter-active" : ""}`}
               >
                 {menu_all}
-              </li>
+              </li> */}
               <li
                 onClick={() => handleFilterChange("menu", menu_menu)}
                 className={`mx-2 btn ${filter === "menu" ? "filter-active" : ""}`}
@@ -72,12 +72,12 @@ function MenuSection({
               >
                 {menu_desserts}
               </li>
-              <li
+              {/* <li
                 onClick={() => handleFilterChange("wines", menu_wines)}
                 className={`mx-2 btn ${filter === "wines" ? "filter-active" : ""}`}
               >
                 {menu_wines}
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

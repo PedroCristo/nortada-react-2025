@@ -108,6 +108,14 @@
 /* Disable aos animation delay on mobile devices */
 @media only screen and (max-width: 768px) {
 
+    #top-bar .container {
+        width: 100%;
+        align-items: flex-start !important;
+        max-width: 100% !important;
+        width: 100% !important;
+
+    }
+
     .show-desktop {
         display: none !important;
     }
@@ -167,6 +175,10 @@
 
     [data-aos-delay] {
         transition-delay: 0 !important;
+    }
+
+    .hero-bg {
+        background-image: var(--hero-bg-mobile);
     }
 
     #hero h1 {

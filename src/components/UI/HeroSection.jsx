@@ -7,9 +7,13 @@ function HeroSection({
   sub_title,
   btn_menu_link,
   btn_menu,
+  btn_booking_link,
   btn_booking,
 }) {
   const [offsetY, setOffsetY] = useState(0);
+
+  const hero_bg_desktop = "/images/desktop/nortada-img-1.jpg";  
+  const hero_bg_mobile = "/images/mobile/gallery/nortada_sala_9-16_4.jpg";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +21,7 @@ function HeroSection({
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -24,6 +29,10 @@ function HeroSection({
     <section
       id="hero"
       className="d-flex align-items-center position-relative"
+      style={{
+        "--hero-bg-desktop": `url("${hero_bg_desktop}")`,
+        "--hero-bg-mobile": `url("${hero_bg_mobile}")`,
+      }}
     >
       {/* PARALLAX BACKGROUND */}
       <div
@@ -47,28 +56,27 @@ function HeroSection({
             <h2>{sub_title}</h2>
 
             <div className="btns">
-              <Link to={btn_menu_link} className="btn-menu animated fadeInUp scrollto">
+              <Link
+                to={btn_menu_link}
+                className="btn-menu animated fadeInUp scrollto"
+              >
                 {btn_menu}
               </Link>
 
-              <Link to="tel:+351219291516" className="btn-book animated fadeInUp scrollto">
+              <Link
+                to={btn_booking_link}
+                className="btn-book animated fadeInUp scrollto"
+              >
                 {btn_booking}
               </Link>
             </div>
-          </div>
-
-          <div className="col-lg-4">
-            {/* <img
-              className="hero-img"
-              src="/images/extras/guia_michelin.png"
-              alt="Michelin Guide"
-            /> */}
           </div>
         </div>
       </div>
     </section>
   );
 }
+
 HeroSection.propTypes = {
   title: PropTypes.string.isRequired,
   sub_title: PropTypes.string.isRequired,
