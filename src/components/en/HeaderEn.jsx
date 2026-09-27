@@ -8,19 +8,21 @@ function HeaderEn() {
 
   // Call the hook with translated messages
   const christmasData = useChristmasMessage({
-    christmasGreeting: "We wish all our customers and employees a Merry Christmas and a Happy New Year",
-    newYearGreeting: "We wish all our customers and employees a prosperous New Year",
+    christmasGreeting:
+      "We wish all our customers and staff a Merry Christmas and a Happy New Year",
+    newYearGreeting:
+      "We wish all our customers and staff a prosperous New Year",
   });
 
   return (
     <div>
-      <Header 
-        HeaderNavDataPt={HeaderNavDataEn} 
+      <Header
+        HeaderNavDataPt={HeaderNavDataEn}
         initialVisibility={showChristmasMessage}
         christmasData={christmasData} // Pass the translated message data
-        langUrl={"/"}  
-        lang1={"EN"}  
-        lang2={"PT"}  
+        langUrl={"/"}
+        lang1={"EN"}
+        lang2={"PT"}
       />
     </div>
   );
