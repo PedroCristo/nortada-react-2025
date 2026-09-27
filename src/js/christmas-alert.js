@@ -24,16 +24,15 @@ export function useChristmasMessage(christmasMessages = {}) {
     let position = "absolute";
     let width = "0";
 
-    if (tm === 11 && tda >= 5) {
+    if (tm === 8 && tda >= 5) {
       // 5 December → 31 December
       displayMessage = `${christmasGreeting} de ${currentYear + 1}`;
-      displayStyle = "block";
-      opacity = "1";
-      position = "absolute";
-      width = "90%";
     } else if (tm === 0 && tda >= 1 && tda <= 10) {
       // 1 January → 10 January
       displayMessage = `${newYearGreeting} de ${currentYear}`;
+    }
+
+    if (displayMessage) {
       displayStyle = "block";
       opacity = "1";
       position = "absolute";
