@@ -9,20 +9,29 @@ export default function companySchedule(scheduleMessages) {
 
   useEffect(() => {
     const dt = new Date();
+
     const th = dt.getHours() + dt.getMinutes() / 60;
     const td = dt.getDay(); // 0 Sun ... 6 Sat
+    const tm = dt.getMonth(); // 0 Jan ... 11 Dec
+    const tda = dt.getDate();
 
     let message = "";
     let color = "";
     let isOpen = false;
 
+    // 🎄 Christmas Day - CLOSED EVERY YEAR
+    if (tm === 11 && tda === 25) {
+      message = scheduleMessages.closed;
+      color = "#CE3333";
+      isOpen = false;
+
     // Tuesday closed
-    if (td === 2) {
+    } else if (td === 2) {
       message = scheduleMessages.tuesdayClosed;
       color = "#CE3333";
       isOpen = false;
-      
-      // Monday: 12:00 - 15:00
+
+    // Monday: 12:00 - 15:00
     } else if (td === 1) {
       if (th >= 8 && th < 12) {
         isOpen = false;
@@ -38,7 +47,7 @@ export default function companySchedule(scheduleMessages) {
         color = "#f70000";
       }
 
-      // Wednesday - Sunday: 12:00 - 22:30
+    // Wednesday - Sunday: 12:00 - 22:30
     } else {
       if (th >= 8 && th < 12) {
         isOpen = false;
