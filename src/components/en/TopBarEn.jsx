@@ -2,12 +2,12 @@ import TopBar from "../UI/TopBar";
 import TopBarDataEN from "../../data/en/top-bar";
 import companySchedule from "../../js/company-shedule";
 
-// const scheduleMessagesEN = {
-//   tuesdayClosed: "We Are Closed on Tuesdays",
-//   open: "We are Open",
-//   closed: "We are Closed",
-//   openingSoon: "We open at 12:00",
-// };
+const scheduleMessagesEN = {
+  tuesdayClosed: "We Are Closed on Tuesdays",
+  open: "We are Open",
+  closed: "We are Closed",
+  openingSoon: "We open at 12:00",
+};
 
 function TopBarEn() {
   const dynamically_schedule = companySchedule(scheduleMessagesEN);
