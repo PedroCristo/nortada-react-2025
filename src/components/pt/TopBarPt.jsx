@@ -8,21 +8,23 @@ const scheduleMessagesPT = {
   closed: "Estamos Encerrados",
   openingSoon: "Abrimos às 12:00",
 };
-
 function TopBarPt() {
-  const dynamically_schedule = companySchedule(scheduleMessagesPT) || { message: "", color: "" };
+  const dynamically_schedule = companySchedule(scheduleMessagesPT) || {
+    message: "",
+    color: "",
+  };
 
   return (
     <div>
       {TopBarDataPT.map((item) => (
-        <TopBar 
+        <TopBar
           key={item.id}
           phone_number={item.phone_number}
           time_shedule={item.time_shedule}
           time_shedule_monday={item.time_shedule_monday}
-          lang1="PT" 
-          lang2="EN" 
-          langUrl="/home-en" 
+          lang1="PT"
+          lang2="EN"
+          langUrl="/home-en"
           dynamically_schedule={dynamically_schedule}
         />
       ))}
@@ -31,4 +33,3 @@ function TopBarPt() {
 }
 
 export default TopBarPt;
-
