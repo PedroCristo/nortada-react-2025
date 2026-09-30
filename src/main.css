@@ -1344,6 +1344,7 @@ section {
   transform: translate(-50%, -50%);
   z-index: 100;
   opacity: 0;
+  transition: 5s ease-in-out;
   /* animation: fadeIn 3s ease-out forwards; */
   text-align: center;
 }
