@@ -1334,10 +1334,10 @@ section {
 *******************************/
 #ChristmasMessage {
   background-image: url(../images/extras/christmas_card_gif.gif);
-  height: 18vh;
-  width: 90%;
+  height: 28vh;
+  width: 50% !important;
   position: absolute;
-  top: 240px;
+  top: 280px;
   left: 0;
   right: 0;
   left: 50%;
@@ -1358,6 +1358,12 @@ section {
   right: 0;
 }
 
+#ChristmasMessage .bi-x-lg:hover {
+  opacity: 0.8 !important;
+  color: var(--interactive-color) !important;
+  transition: all 0.3s ease-in-out !important;
+
+}
 
 #ChristmasMessage.active {
   display: none !important;

@@ -21,10 +21,14 @@ export default function companySchedule(scheduleMessages) {
       message = scheduleMessages.tuesdayClosed;
       color = "#CE3333";
       isOpen = false;
-
-    // Monday: 12:00 - 15:00
+      
+      // Monday: 12:00 - 15:00
     } else if (td === 1) {
-      if (th >= 12 && th < 15) {
+      if (th >= 8 && th < 12) {
+        isOpen = false;
+        message = scheduleMessages.openingSoon;
+        color = "#f70000";
+      } else if (th >= 12 && th < 15) {
         isOpen = true;
         message = scheduleMessages.open;
         color = "#15EB07";
@@ -34,9 +38,13 @@ export default function companySchedule(scheduleMessages) {
         color = "#f70000";
       }
 
-    // Wednesday - Sunday: 12:00 - 22:30
+      // Wednesday - Sunday: 12:00 - 22:30
     } else {
-      if (th >= 12 && th < 22.5) {
+      if (th >= 8 && th < 12) {
+        isOpen = false;
+        message = scheduleMessages.openingSoon;
+        color = "#f70000";
+      } else if (th >= 12 && th < 22.5) {
         isOpen = true;
         message = scheduleMessages.open;
         color = "#15EB07";

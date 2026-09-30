@@ -6,6 +6,7 @@ const scheduleMessagesPT = {
   tuesdayClosed: "Estamos encerrados às Terças",
   open: "Estamos Abertos",
   closed: "Estamos Encerrados",
+  openingSoon: "Abrimos às 12:00",
 };
 
 function TopBarPt() {

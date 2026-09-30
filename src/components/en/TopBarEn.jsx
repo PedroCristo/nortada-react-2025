@@ -3,9 +3,10 @@ import TopBarDataEN from "../../data/en/top-bar";
 import companySchedule from "../../js/company-shedule";
 
 const scheduleMessagesEN = {
-  tuesdayClosed: "We Are closed on Tuesdays",
+  tuesdayClosed: "We Are Closed on Tuesdays",
   open: "We are Open",
   closed: "We are Closed",
+  openingSoon: "We open at 12:00",
 };
 
 function TopBarEn() {
@@ -14,14 +15,14 @@ function TopBarEn() {
   return (
     <div>
       {TopBarDataEN.map((item) => (
-        <TopBar 
+        <TopBar
           key={item.id}
           phone_number={item.phone_number}
           time_shedule={item.time_shedule}
           time_shedule_monday={item.time_shedule_monday}
-          lang1="EN" 
-          lang2="PT" 
-          langUrl="/" 
+          lang1="EN"
+          lang2="PT"
+          langUrl="/"
           dynamically_schedule={dynamically_schedule}
         />
       ))}
