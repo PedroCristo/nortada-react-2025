@@ -9,7 +9,7 @@ function TopBar({
 }) {
   return (
     <div id="topbar" className="d-flex align-items-center fixed-top">
-      <div className="container d-flex justify-content-center justify-content-md-between">
+      <div className="container d-flex justify-content-center justify-content-between">
         <div className="contact-info d-flex align-items-center">
           <div className="show-desktop"></div>
           <i className="bi bi-clock d-flex align-items-center">

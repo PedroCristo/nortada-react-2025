@@ -101,11 +101,11 @@
     #banner p {
         padding: 0 25px;
     }
-
+    
     .title-brand {
         font-size: 1.9rem !important;
     }
-
+    
     .hero-bg {
         transform: translateY(0) !important;
         will-change: auto;
@@ -114,12 +114,15 @@
 
 /* Disable aos animation delay on mobile devices */
 @media only screen and (max-width: 768px) {
-
-    #top-bar .container {
+    
+    #topbar .container {
         width: 100%;
-        align-items: flex-start !important;
         max-width: 100% !important;
-        width: 100% !important;
+        justify-content: flex-start !important;
+    }
+
+    #topbar .contact-info {
+        margin-top: 25px;
 
     }
 
@@ -227,6 +230,7 @@
         justify-content: center;
         align-items: center;
     }
+
 }
 
 @media only screen and (max-width: 700px) {
