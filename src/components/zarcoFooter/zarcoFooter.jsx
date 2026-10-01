@@ -9,7 +9,6 @@ export default function ZarcoFooter({ lang}) {
           ? "Desenvolvido por Zarco Studios"
           : "Developed by Zarco Studios"}
       </span>
-
       <a
         href="https://zarcostudios.com/"
         target="_blank"
