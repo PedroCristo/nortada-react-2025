@@ -1,5 +1,5 @@
 import zarcoLogo from "./assets/zarco_logo_1.png";
-import "./ZarcoFooter.css";
+import "./zarcoFooter.css";
 
 export default function ZarcoFooter({ lang}) {
   return (
