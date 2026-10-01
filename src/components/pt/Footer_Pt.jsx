@@ -10,6 +10,7 @@ function Footer_Pt() {
                 policy_name={"Política de Privacidade"} 
                 cookies_url={"/política-de-privacidade-e-cookies#cookies"}
                 cookies_name={"Cookies"}
+                lang={"pt"}
             />
         </div>
     );

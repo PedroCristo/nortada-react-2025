@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import ZarcoBadge from "../zarcoFooter/zarcoFooter";
 
 const Footer = ({
   copy_1,
@@ -9,6 +10,7 @@ const Footer = ({
   policy_name,
   cookies_url,
   cookies_name,
+  lang
 }) => {
   const currentYear = new Date().getFullYear();
   return (
@@ -44,9 +46,21 @@ const Footer = ({
               </div>
             </div>
             <div className="policy-links d-flex justify-content-end align-items-end">
-              <span className="mr-5 mt-2"> <Link  className="custom-link" to={policy_url}>{policy_name}</Link></span>&nbsp; |&nbsp;
-              <span className="ml-5 mt-2"> <Link  className="custom-link" to={cookies_url}>{cookies_name}</Link></span>
+              <span className="mr-5 mt-2">
+                {" "}
+                <Link className="custom-link" to={policy_url}>
+                  {policy_name}
+                </Link>
+              </span>
+              &nbsp; |&nbsp;
+              <span className="ml-5 mt-2">
+                {" "}
+                <Link className="custom-link" to={cookies_url}>
+                  {cookies_name}
+                </Link>
+              </span>
             </div>
+            <ZarcoBadge lang={lang} />
           </div>
         </div>
       </div>
