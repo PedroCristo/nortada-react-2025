@@ -305,6 +305,10 @@
         font-size: 12px;
     }
 
+    #topbar .contact-info .bi-clock {
+      margin-left: 5px !important;
+    }
+
     #hero .container {
         padding-top: 130px;
         padding-bottom: 60px;
@@ -371,7 +375,7 @@
 
     .schedule {
         position: absolute;
-        top: 60%;
+        top: 70%;
         right: 25px;
         transform: translateY(-50%);
     }
