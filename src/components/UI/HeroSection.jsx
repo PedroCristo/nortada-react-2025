@@ -12,7 +12,7 @@ function HeroSection({
 }) {
   const [offsetY, setOffsetY] = useState(0);
 
-  const hero_bg_desktop = "/images/desktop/nortada-img-1.jpg";  
+  const hero_bg_desktop = "/images/desktop/nortada-img-1.jpg";
   const hero_bg_mobile = "/images/mobile/gallery/nortada_sala_9-16_4.jpg";
 
   useEffect(() => {
@@ -63,12 +63,12 @@ function HeroSection({
                 {btn_menu}
               </Link>
 
-              <Link
-                to={btn_booking_link}
+              <a
+                href="tel:+351219291516"
                 className="btn-book animated fadeInUp scrollto"
               >
                 {btn_booking}
-              </Link>
+              </a>
             </div>
           </div>
         </div>
