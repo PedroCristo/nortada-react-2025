@@ -1329,9 +1329,9 @@ section {
   color: #8f8989;
 }
 
-/*******************************
-*       CHRISTMAS ALERT       *
-*******************************/
+/********************************
+*       CHRISTMAS ALERT         *
+********************************/
 #ChristmasMessage {
   background-image: url(../images/extras/christmas_card_gif.gif);
   height: 28vh;
@@ -1363,12 +1363,12 @@ section {
   opacity: 0.8 !important;
   color: var(--interactive-color) !important;
   transition: all 0.3s ease-in-out !important;
-
+  
 }
 
 #ChristmasMessage.active {
   display: none !important;
-
+  
 }
 
 #ChristmasMessage .title-box {
@@ -1393,9 +1393,45 @@ section {
     opacity: 0;
     transform: translate(-50%, -60%);
   }
-
+  
   100% {
     opacity: 1;
     transform: translate(-50%, -50%);
   }
+}
+
+/********************************
+*           THANKS PAGE         *
+********************************/
+
+.thanks-page {
+  position: relative;
+  color: var(--green-color) !important;
+  background-image: url("../public/images/desktop/nortada_12.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.thanks-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.4) 15%,
+    rgba(0, 0, 0, 0.6) 70%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  z-index: 1;
+}
+
+.thanks-page > * {
+  position: relative;
+  z-index: 2;
+}
+
+.thanks-page .btn {
+  color: var(--green-color) !important;
 }

@@ -12,6 +12,8 @@ import HomeEn from "./pages/en/HomeEn.jsx";
 import MenuEn from "./pages/en/MenuEn.jsx";
 import PageNotFound from "./pages/error/404.jsx";
 import PrivacyCokkiesPolicyEn from "./pages/en/PrivacyCookiesPolicyEn.jsx";
+import ThanksPagePt from "./components/pt/ThanksMessagePt.jsx";
+import ThanksPageEn from "./components/en/ThanksMessageEn.jsx";
 
 function App() {
   useEffect(() => {
@@ -41,6 +43,8 @@ function App() {
         <Route path="/home-en" exact element={<HomeEn />} />
         <Route path="/menu-en" exact element={<MenuEn />} />
         <Route path="privacy-policy-cookies" exact element={<PrivacyCokkiesPolicyEn />} />
+        <Route path="obrigado" exact element={<ThanksPagePt />} />
+        <Route path="thank-you" exact element={<ThanksPageEn />} />
         <Route path="*" exact element={<PageNotFound />} />
       </Routes>
     </>

@@ -10,7 +10,7 @@ function FormSection({
   form_message,
   form_sent_menssage,
   form_btn,
-  recaptcha_lang
+  recaptcha_lang,
 }) {
   const [isRecaptchaChecked, setIsRecaptchaChecked] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
@@ -37,7 +37,15 @@ function FormSection({
       className="email-form"
       onSubmit={handleSubmit}
     >
-     <input type="hidden" name="_next" value="https://restaurantenortada.com/"></input>
+      <input
+        type="hidden"
+        name="_next"
+        value={
+          recaptcha_lang === "pt"
+            ? "https://restaurantenortada.com/obrigado"
+            : "https://restaurantenortada.com/thank-you"
+        }
+      />
       <div className="row">
         <div className="col-md-6 form-group">
           <input type="hidden" name="_captcha" value="false" />
@@ -87,18 +95,19 @@ function FormSection({
       </div>
       <div className="text-left row">
         <div className="col-md-6">
-        <button type="submit" className="btn">{form_btn}</button>
+          <button type="submit" className="btn">
+            {form_btn}
+          </button>
         </div>
         <div className="col-md-6">
-      <ReCAPTCHA
-        // sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-        sitekey={"6Lfsr84qAAAAAFtyUbI1a8jXj7YOaxzZ6NQVZdL8"}
-        onChange={handleRecaptchaChange}
-        hl={recaptcha_lang}
-      />
-      {alertMessage && (
-        <h6 className="alert alert-danger mt-3">{alertMessage}</h6>
-      )}
+          <ReCAPTCHA
+            sitekey="6Lfsr84qAAAAAFtyUbI1a8jXj7YOaxzZ6NQVZdL8"
+            onChange={handleRecaptchaChange}
+            hl={recaptcha_lang}
+          />
+          {alertMessage && (
+            <h6 className="alert alert-danger mt-3">{alertMessage}</h6>
+          )}
         </div>
       </div>
     </form>
@@ -114,7 +123,7 @@ FormSection.propTypes = {
   form_sent_menssage: PropTypes.string.isRequired,
   form_btn: PropTypes.string.isRequired,
   recaptcha_menssage: PropTypes.string.isRequired,
-  recaptcha_lang: PropTypes.string.isRequired
+  recaptcha_lang: PropTypes.string.isRequired,
 };
 
 export default FormSection;
