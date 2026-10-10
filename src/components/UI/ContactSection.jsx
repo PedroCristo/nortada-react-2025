@@ -57,7 +57,7 @@ function ContactSection({
                 </div>
               </div>
             </div>
-            <div className="col-lg-8 mt-5 mt-lg-0">
+            {/* <div className="col-lg-8 mt-5 mt-lg-0">
               {FormData && FormData.length > 0 ? (
                 FormData.map((item) => (
                   <FormSection
@@ -77,7 +77,7 @@ function ContactSection({
                   <p className="p-5 mt-5">{form_error}</p>
                 </div>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
         <div data-aos="fade-up" className="map">
